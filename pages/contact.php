@@ -132,7 +132,7 @@
                             id="gridCheck"
                             required>
                         <label class="form-check-label" for="gridCheck">
-                            أوافق على <a href="terms-condition.html">الشروط والأحكام</a> و <a href="privacy-policy.html">سياسة الخصوصية</a>
+                            أوافق على <a href="<?= $base_url ?>terms-conditions">الشروط والأحكام</a> و <a href="<?= $base_url ?>privacy-policy">سياسة الخصوصية</a>
                         </label>
                         <div class="help-block with-errors gridCheck-error"></div>
                     </div>
