@@ -1,0 +1,1969 @@
+@media only screen and (max-width: 767px) {
+  /*-- Default CSS --*/
+  body {
+    font-size: 14px;
+  }
+  .ptb-100 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .pt-100 {
+    padding-top: 50px;
+  }
+  .pb-70 {
+    padding-bottom: 20px;
+  }
+  .pb-100 {
+    padding-bottom: 50px;
+  }
+  /*-- End Default CSS --*/
+  /*----- Home Page 1 -----*/
+  /*-- Navbar --*/
+  .mobile-nav .logo {
+    width: 80px;
+  }
+  .mobile-nav.mean-container .mean-nav ul li a.active {
+    color: #b69d74;
+  }
+  .mobile-nav nav .navbar-nav {
+    height: 350px;
+    overflow-y: scroll;
+  }
+  .side-nav {
+    display: none;
+  }
+  /*-- End Navbar --*/
+  /*-- Banner --*/
+  .banner-area {
+    height: 100%;
+    text-align: center;
+    padding-top: 120px;
+    padding-bottom: 150px;
+  }
+  .banner-item .banner-left {
+    margin-top: 0;
+  }
+  .banner-item .banner-left h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .banner-item .banner-left p {
+    margin-bottom: 30px;
+    font-size: 15px;
+  }
+  .banner-item .banner-left a {
+    padding: 15px 18px;
+    font-size: 13px;
+  }
+  .banner-item .banner-right img {
+    bottom: -30px;
+  }
+  @keyframes banner-animation {
+    50% {
+      transform: translate(0, -20px);
+    }
+  }
+  .banner-bottom {
+    border-top: 5px solid rgba(182, 157, 116, 0.3490196078);
+    border-bottom: 5px solid rgba(182, 157, 116, 0.3490196078);
+    border-left: 5px solid rgba(182, 157, 116, 0.3490196078);
+    border-right: 5px solid rgba(182, 157, 116, 0.3490196078);
+    bottom: -40px;
+    left: 20px;
+  }
+  .banner-bottom ul li i {
+    line-height: 75px;
+    font-size: 35px;
+  }
+  .banner-bottom ul li:last-child {
+    padding-left: 15px;
+    padding-right: 75px;
+    padding-top: 12px;
+    padding-bottom: 18px;
+    text-align: left;
+  }
+  .banner-bottom ul li:last-child p {
+    font-size: 15px;
+  }
+  /*-- End Banner --*/
+  /*-- Help --*/
+  .help-area {
+    padding-top: 90px;
+  }
+  .help-shape img {
+    right: 20px;
+  }
+  .help-left {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  .help-left:before {
+    left: -35px;
+    border: 10px solid #b69d74;
+  }
+  .help-item .help-right {
+    max-width: 100%;
+    margin-left: 0;
+  }
+  .help-item .help-right h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  .help-item .help-right p {
+    margin-bottom: 15px;
+  }
+  .help-item .help-right .help-inner-left {
+    width: 100%;
+  }
+  .help-item .help-right .help-inner-left ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .help-item .help-right .help-inner-left ul li i {
+    margin-right: 8px;
+    font-size: 18px;
+    top: 3px;
+  }
+  .help-item .help-right .help-inner-right {
+    width: 100%;
+  }
+  .help-item .help-right .help-inner-right ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .help-item .help-right .help-inner-right ul li i {
+    margin-right: 8px;
+    font-size: 18px;
+    top: 3px;
+  }
+  .help-item .help-right .help-signature img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .cmn-btn {
+    font-size: 14px;
+    padding: 11px 25px;
+  }
+  /*-- End Help --*/
+  /*-- Practice --*/
+  .section-title {
+    margin-bottom: 30px;
+    margin-top: -4px;
+  }
+  .section-title span {
+    font-size: 12px;
+    margin-bottom: 7px;
+  }
+  .section-title h2 {
+    font-size: 22px;
+  }
+  .practice-item {
+    padding: 30px 15px;
+  }
+  .practice-item .practice-icon i {
+    font-size: 30px;
+    position: relative;
+    top: -5px;
+  }
+  .practice-item h3 {
+    margin-bottom: 16px;
+    font-size: 20px;
+  }
+  .practice-item p {
+    margin-bottom: 22px;
+  }
+  .practice-item a {
+    padding: 10px 22px;
+  }
+  /*-- End Practice --*/
+  /*-- Expertise --*/
+  .expertise-area {
+    padding-top: 50px;
+  }
+  .expertise-item ul li {
+    margin-bottom: 40px;
+  }
+  .expertise-item ul li:last-child {
+    margin-bottom: 30px;
+  }
+  .expertise-item ul li .expertise-icon i {
+    font-size: 40px;
+    left: 26px;
+    top: 26px;
+  }
+  .expertise-item ul li h3 {
+    padding-left: 110px;
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+  .expertise-item ul li p {
+    padding-left: 110px;
+    font-size: 14px;
+  }
+  .expertise-image {
+    padding-top: 50px;
+  }
+  .expertise-image:before {
+    border: 5px solid #b69d74;
+  }
+  /*-- End Expertise --*/
+  /*-- Portfolio --*/
+  .portfolio-area .text-center {
+    margin-top: 0;
+  }
+  .portfolio-item .portfolio-inner {
+    padding: 15px;
+  }
+  .portfolio-item .portfolio-inner span {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+  }
+  .portfolio-item .portfolio-inner h3 a {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  /*-- End Portfolio --*/
+  /*-- Team --*/
+  .team-area {
+    padding-bottom: 90px;
+  }
+  .team-item .team-inner h3 {
+    padding-top: 18px;
+  }
+  .team-item .team-inner span {
+    font-size: 13px;
+  }
+  /*-- End Team --*/
+  /*-- Location --*/
+  .loaction-area {
+    top: -50px;
+  }
+  .location-bg {
+    padding-top: 30px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .location-item {
+    padding-left: 90px;
+  }
+  .location-item .location-icon i {
+    font-size: 22px;
+    left: 32px;
+  }
+  .location-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .location-item ul li {
+    font-size: 13px;
+  }
+  .location-item .location-link {
+    display: block;
+    color: #282828;
+    margin-top: 10px;
+  }
+  .location-item .location-link:hover {
+    color: #ffffff;
+  }
+  /*-- End Location --*/
+  /*-- Contact Form --*/
+  .contact-wrap {
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact-wrap .form-group .form-control {
+    height: 50px;
+    padding-left: 20px;
+    font-size: 14px;
+  }
+  .contact-btn {
+    font-size: 14px;
+    padding: 12px 28px;
+  }
+  .list-unstyled {
+    font-size: 14px;
+  }
+  .text-danger {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+  .text-success {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+  /*-- End Contact Form --*/
+  /*-- Blog --*/
+  .blog-area {
+    padding-bottom: 100px;
+  }
+  .blog-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .blog-item .blog-inner {
+    padding: 0 15px 25px 15px;
+  }
+  .blog-item .blog-inner span {
+    font-size: 13px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    max-width: 135px;
+    margin-bottom: 20px;
+  }
+  .blog-item .blog-inner h3 {
+    margin-bottom: 15px;
+  }
+  .blog-item .blog-inner h3 a {
+    font-size: 15px;
+  }
+  .blog-item .blog-inner ul {
+    margin-bottom: 10px;
+  }
+  .blog-item .blog-inner ul li {
+    margin-right: 15px;
+  }
+  .blog-item .blog-inner p {
+    margin-bottom: 10px;
+  }
+  .blog-item .blog-inner .blog-link {
+    font-size: 15px;
+  }
+  .blog-item .blog-inner .blog-link i {
+    font-size: 18px;
+  }
+  /*-- End Blog --*/
+  /*-- Newsletter --*/
+  .newsletter-area {
+    top: -50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+  }
+  .newsletter-area img {
+    max-width: 185px;
+  }
+  .newsletter-area h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .newsletter-area .newsletter-form .form-control {
+    padding-left: 15px;
+    font-size: 14px;
+  }
+  .newsletter-area .newsletter-form .contact-btn {
+    padding: 13px 20px;
+    font-size: 13px;
+  }
+  /*-- End Newsletter --*/
+  /*-- Footer --*/
+  footer .footer-item .footer-logo a img {
+    margin-bottom: 25px;
+    width: 90px;
+  }
+  footer .footer-item .footer-logo p {
+    margin-bottom: 20px;
+  }
+  footer .footer-item .footer-logo ul li {
+    margin-right: 15px;
+  }
+  footer .footer-item .footer-logo ul li a {
+    font-size: 18px;
+  }
+  footer .footer-item .footer-service h3 {
+    margin-bottom: 22px;
+    font-size: 18px;
+  }
+  footer .footer-item .footer-service ul li {
+    margin-bottom: 16px;
+  }
+  footer .footer-item .footer-find h3 {
+    margin-bottom: 22px;
+    font-size: 18px;
+  }
+  footer .footer-item .footer-find ul li {
+    margin-bottom: 16px;
+  }
+  footer .footer-item .footer-find ul li i {
+    font-size: 21px;
+    margin-right: 4px;
+  }
+  footer .copyright-area {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  footer .copyright-area .copyright-item p {
+    margin-bottom: 3px;
+  }
+  footer .copyright-area .copyright-right {
+    text-align: center;
+  }
+  /*-- End Footer --*/
+  /*----- End Home Page 1 -----*/
+  /*----- Back To Top -----*/
+  #toTop {
+    bottom: 90px;
+  }
+  .back-to-top-btn i {
+    height: 48px;
+    width: 48px;
+    line-height: 48px;
+  }
+  /*----- End Back To Top -----*/
+  /*----- Home Page 2 -----*/
+  /*-- Banner --*/
+  .banner-area-two .banner-item .banner-right img {
+    margin-right: auto;
+  }
+  /*-- End Banner --*/
+  /*-- Counter --*/
+  .counter-bg {
+    padding-top: 30px;
+    padding-bottom: 0;
+    top: 0;
+  }
+  .counter-item i {
+    font-size: 28px;
+    left: 0;
+  }
+  .counter-item .counter-inner {
+    padding-left: 36px;
+  }
+  .counter-item .counter-inner h3 {
+    font-size: 26px;
+  }
+  .counter-item .counter-inner p {
+    font-size: 13px;
+  }
+  /*-- End Counter --*/
+  /*-- Help --*/
+  .help-area-two {
+    padding-top: 50px;
+  }
+  .help-area-two .help-shape img {
+    left: 0;
+  }
+  .help-area-two .help-wrap .help-item .help-right {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .help-area-two .help-wrap .help-item .cmn-btn {
+    margin-top: 25px;
+  }
+  .help-area-two .help-wrap .help-left {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .help-area-two .help-wrap .help-left:before {
+    display: none;
+  }
+  /*-- End Help --*/
+  /*-- Expertise --*/
+  .expertise-area-two .expertise-item ul li {
+    padding: 14px 14px 20px 20px;
+  }
+  .expertise-area-two .expertise-item ul li .expertise-icon {
+    left: 20px;
+    top: 25px;
+  }
+  /*-- End Expertise --*/
+  /*----- End Home Page 2 -----*/
+  /*----- Home Page 3 -----*/
+  /*-- Home Slider --*/
+  .slider-item {
+    height: 100%;
+    padding-top: 130px;
+    padding-bottom: 140px;
+    text-align: center;
+  }
+  .slider-text h1 {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+  .slider-text h1:before {
+    display: none;
+  }
+  .slider-text span {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+  .slider-text p {
+    margin-bottom: 40px;
+    font-size: 15px;
+  }
+  .slider-text a {
+    padding: 15px 18px;
+    font-size: 13px;
+  }
+  .slider-shape .s-s-one {
+    top: 30px;
+  }
+  .slider-shape .s-s-two {
+    top: 30px;
+  }
+  .slider-shape .s-s-three {
+    top: 30px;
+  }
+  .home-slider .owl-prev {
+    top: 42%;
+    left: 4px;
+    width: 45px;
+    height: 45px;
+    font-size: 25px !important;
+    line-height: 45px !important;
+  }
+  .home-slider .owl-next {
+    top: 42%;
+    right: 4px;
+    width: 45px;
+    height: 45px;
+    font-size: 25px !important;
+    line-height: 45px !important;
+  }
+  .home-slider.owl-theme .owl-dots {
+    bottom: 80px;
+  }
+  /*-- End Home Slider --*/
+  /*-- Slider Bottom --*/
+  .slider-bottom-area .slider-bottom-wrap {
+    padding-top: 30px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    top: 0;
+  }
+  /*-- End Slider Bottom --*/
+  /*-- Help --*/
+  .help-area-three {
+    padding-top: 50px;
+  }
+  /*-- End Help --*/
+  /*-- Counter --*/
+  .counter-area-two {
+    top: -55px;
+    position: relative;
+  }
+  /*-- End Counter --*/
+  /*----- End Home Page 3 -----*/
+  /*----- About Page -----*/
+  /*-- Page Title --*/
+  .page-title-area-three .page-title-text {
+    margin-top: 50px;
+  }
+  .page-title-area {
+    height: 350px;
+  }
+  .page-title-text {
+    margin-top: 70px;
+  }
+  .page-title-text h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .page-title-text ul li {
+    font-size: 14px;
+  }
+  .page-title-text ul li i {
+    font-size: 18px;
+    top: 2px;
+  }
+  .page-title-text .page-title-btn a {
+    border: 2px solid #b69d74;
+    padding: 9px 20px;
+    font-size: 13px;
+  }
+  .page-title-text .page-title-btn a i {
+    font-size: 18px;
+  }
+  /*-- End Page Title --*/
+  /*-- Help --*/
+  .help-area-four {
+    padding-top: 50px;
+  }
+  /*-- End Help --*/
+  /*-- About --*/
+  .about-area {
+    padding-bottom: 70px;
+  }
+  .about-item .about-video-wrap a {
+    top: 39%;
+    left: 43%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+  }
+  .about-item .about-content h2 {
+    font-size: 20px;
+  }
+  .about-item .about-legal ul li {
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  .about-item .about-legal ul li:last-child {
+    margin-bottom: 0;
+  }
+  .about-item .about-legal ul li .banner-bottom {
+    left: 0;
+  }
+  .about-item .about-legal ul li .banner-bottom ul li {
+    margin-bottom: 0;
+  }
+  .about-item .about-legal ul li .banner-bottom ul li:last-child {
+    position: relative;
+    top: 2px;
+  }
+  .about-item .about-information h2 {
+    margin-bottom: 12px;
+  }
+  /*-- End About --*/
+  /*----- End About Page -----*/
+  /*----- Attorneys Page -----*/
+  /*-- Team --*/
+  .team-area-two {
+    padding-bottom: 70px;
+  }
+  /*-- End Team --*/
+  /*----- End Attorneys Page -----*/
+  /*----- Attorneys Details Page -----*/
+  /*-- Attorneys Details --*/
+  .attor-details-item .attor-details-left {
+    padding: 0 15px 25px 15px;
+  }
+  .attor-details-item .attor-details-left .attor-social ul {
+    padding: 8px 25px;
+    margin-bottom: 20px;
+  }
+  .attor-details-item .attor-details-left .attor-social-details {
+    margin-bottom: 30px;
+  }
+  .attor-details-item .attor-details-left .attor-social-details h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .attor-details-item .attor-details-left .attor-social-details ul li {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  .attor-details-item .attor-details-left .attor-social-details ul li i {
+    font-size: 17px;
+  }
+  .attor-details-item .attor-details-left .attor-work h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .attor-details-item .attor-details-left .attor-work .attor-work-left ul li:before {
+    width: 28px;
+    height: 1px;
+    top: 10px;
+    right: -40px;
+  }
+  .attor-details-item .attor-details-left .attor-work .attor-work-right {
+    margin-left: 50px;
+  }
+  .attor-details-item .attor-prev ul li a {
+    padding: 6px 14px;
+  }
+  .attor-details-item .attor-details-right .attor-details-name {
+    margin-bottom: 30px;
+  }
+  .attor-details-item .attor-details-right .attor-details-name h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .attor-details-item .attor-details-right .attor-details-name span {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+  .attor-details-item .attor-details-right .attor-details-things h3 {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+  .attor-details-item .attor-details-right .attor-details-things p {
+    margin-bottom: 10px;
+  }
+  .attor-details-item .attor-details-right .attor-details-things ul li {
+    margin-bottom: 10px;
+  }
+  /*-- End Attorneys Details --*/
+  /*-- Contact Form --*/
+  .contact-form-two h2 {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+  .contact-form-two .contact-wrap {
+    padding: 30px 15px;
+  }
+  /*-- End Contact Form --*/
+  /*----- End Attorneys Details Page -----*/
+  /*----- Case Studies Page -----*/
+  /*-- Portfolio --*/
+  .portfolio-area-two {
+    padding-bottom: 100px;
+  }
+  .case-pagination ul li a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+  }
+  /*-- End Portfolio --*/
+  /*----- End Case Studies Page -----*/
+  /*----- Case Studies Details Page -----*/
+  /*-- Case Details Img --*/
+  .case-details-item {
+    margin-bottom: 30px;
+  }
+  .case-details-item img {
+    width: 100%;
+  }
+  .case-details-item h3 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .case-details-item ul li {
+    margin-bottom: 8px;
+  }
+  /*-- End Case Details Img --*/
+  /*-- Case Details Tab --*/
+  .case-details-tab {
+    padding-top: 40px;
+  }
+  .case-details-tab .case-details-tab-item h2 {
+    font-size: 22px;
+  }
+  .case-details-tab .case-details-tab-item .nav-pills .nav-link {
+    width: 85px;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+  .case-details-tab .case-details-tab-item .tab-content h3 {
+    font-size: 18px;
+    margin-bottom: 12px;
+    line-height: 28px;
+  }
+  .case-details-tab .case-details-tab-item .tab-content p {
+    margin-bottom: 30px;
+  }
+  .case-details-tab .case-details-tab-item .case-details-tab-img {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+  }
+  .case-details-tab .case-details-tab-item .case-details-tab-img img {
+    position: relative;
+    bottom: 10px;
+  }
+  .case-details-tab .case-details-tab-item .case-details-tab-img:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border: 10px solid #b69d74;
+    background-color: #373535;
+  }
+  /*-- End Case Details Tab --*/
+  /*-- Portfolio --*/
+  .portfolio-area-three {
+    padding-bottom: 70px;
+  }
+  /*-- End Portfolio --*/
+  /*----- End Case Studies Details Page -----*/
+  /*----- Blog Details Page -----*/
+  /*-- Blog Details --*/
+  .blog-details-item .blog-details-img img {
+    margin-bottom: 30px;
+  }
+  .blog-details-item .blog-details-img h2 {
+    font-size: 18px;
+    line-height: 28px;
+    padding-right: 0;
+  }
+  .blog-details-item .blog-details-social {
+    padding-top: 12px;
+    margin-bottom: 18px;
+  }
+  .blog-details-item .blog-details-social ul li a {
+    font-size: 18px;
+    margin-right: 6px;
+  }
+  .blog-details-item .blog-details-nav {
+    margin-bottom: 30px;
+  }
+  .blog-details-item .blog-details-nav a {
+    padding: 6px 16px;
+  }
+  .blog-details-item .blog-details-search {
+    padding: 30px 15px 70px;
+    margin-bottom: 30px;
+  }
+  .blog-details-item .blog-details-search .search-area .form-control {
+    height: 45px;
+    padding-left: 20px;
+    font-size: 14px;
+  }
+  .blog-details-item .blog-details-search .search-area .blog-details-btn {
+    height: 44px;
+  }
+  .blog-details-item .blog-details-search h3 {
+    font-size: 18px;
+  }
+  .blog-details-item .blog-details-search ul li {
+    padding-top: 0;
+    margin-bottom: 60px;
+  }
+  .blog-details-item .blog-details-search ul li .blog-details-recent {
+    padding-left: 110px;
+  }
+  .blog-details-item .blog-details-search ul li .blog-details-recent h4 {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .blog-details-item .blog-details-search ul li ul li {
+    font-size: 13px;
+    margin-right: 5px;
+  }
+  .blog-details-item .blog-details-tags {
+    padding: 30px 15px 30px;
+  }
+  .blog-details-item .blog-details-tags h3 {
+    font-size: 18px;
+  }
+  .blog-details-item .blog-details-tags ul li a {
+    padding: 8px 15px;
+  }
+  .blog-details-category {
+    padding: 30px 15px;
+    margin-bottom: 30px;
+  }
+  .blog-details-category h3 {
+    font-size: 20px;
+  }
+  .blog-details-category ul li:before {
+    top: 6px;
+    height: 30px;
+  }
+  .blog-details-category ul li a {
+    font-size: 14px;
+  }
+  .blog-area-three {
+    padding-bottom: 70px;
+  }
+  .blog-area-three .blog-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /*-- End Blog Details --*/
+  /*----- End Blog Details Page -----*/
+  /*----- Practice Page -----*/
+  /*-- Practice --*/
+  .practice-area-two {
+    padding-bottom: 70px;
+  }
+  /*-- End Practice --*/
+  /*----- End Practice Page -----*/
+  /*----- Practice Details Page -----*/
+  /*-- Practice --*/
+  .practice-details-area {
+    padding-bottom: 100px;
+  }
+  .practice-details-item .practice-details-content {
+    margin-bottom: 30px;
+  }
+  .practice-details-item .practice-details-content .section-title {
+    margin-bottom: 20px;
+  }
+  .practice-details-item .practice-details-content p {
+    margin-bottom: 15px;
+  }
+  .practice-details-item .practice-details-content ul li {
+    margin-bottom: 8px;
+  }
+  .practice-details-item .blog-details-category {
+    margin-bottom: 30px;
+  }
+  .practice-details-item .practice-details-contact {
+    margin-bottom: 30px;
+  }
+  .practice-details-item .practice-details-contact h3 {
+    font-size: 20px;
+  }
+  .practice-details-item .practice-details-contact ul li {
+    font-size: 14px;
+    margin-bottom: 13px;
+  }
+  .practice-details-item .practice-details-contact ul li i {
+    font-size: 16px;
+  }
+  .practice-details-item .practice-details-brochures h3 {
+    font-size: 20px;
+  }
+  .practice-details-item .practice-details-brochures .cmn-btn i {
+    font-size: 16px;
+  }
+  /*-- End Practice --*/
+  /*----- End Practice Details Page -----*/
+  /*----- Appointment Page -----*/
+  /*-- Team --*/
+  .team-area-three {
+    padding-bottom: 20px;
+  }
+  .contact-form-three {
+    padding-bottom: 100px;
+  }
+  /*-- End Team --*/
+  /*----- End Appointment Page -----*/
+  /*----- Testimonial Page -----*/
+  /*-- Testimonial --*/
+  .testimonial-area {
+    padding-bottom: 100px;
+  }
+  .testimonial-area .testimonial-more {
+    margin-top: 15px;
+  }
+  .testimonial-item .testimonial-wrap p {
+    padding: 25px;
+  }
+  .testimonial-item .testimonial-wrap .testimonial-right h3 {
+    font-size: 20px;
+    margin-bottom: 6px;
+  }
+  /*-- End Testimonial --*/
+  /*----- End Testimonial Page -----*/
+  /*----- FAQ Page -----*/
+  /*-- Faq --*/
+  .faq-area {
+    padding-bottom: 70px;
+  }
+  .faq-head h2 {
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  .faq-wrap {
+    margin-bottom: 30px;
+  }
+  .faq-wrap:last-child {
+    margin-bottom: 30px;
+  }
+  .accordion p {
+    font-size: 14px;
+    padding: 20px 15px 15px 15px;
+  }
+  .accordion a {
+    font-size: 14px;
+    padding: 12px 20px 12px 12px;
+  }
+  .accordion a:after {
+    top: 8px;
+    font-size: 21px;
+    right: 8px;
+  }
+  .accordion li a.active:after {
+    font-size: 21px;
+  }
+  /*-- End Faq --*/
+  /*----- End Faq Page -----*/
+  /*----- Error Page -----*/
+  /*-- 404 --*/
+  .error-item {
+    height: 590px;
+  }
+  .error-item h1 {
+    font-size: 70px;
+  }
+  .error-item p {
+    margin-bottom: 2px;
+    font-size: 20px;
+  }
+  .error-item a {
+    padding: 14px 30px;
+    margin-top: 35px;
+    font-size: 14px;
+  }
+  /*-- End 404 --*/
+  /*----- End Error Page -----*/
+  /*----- Privacy Policy Page -----*/
+  /*-- Privacy --*/
+  .privacy-area {
+    padding-bottom: 70px;
+  }
+  .privacy-item {
+    margin-bottom: 30px;
+  }
+  .privacy-item h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  /*-- End Privacy --*/
+  /*----- End Privacy Policy Page -----*/
+  /*----- Contact Page -----*/
+  /*-- Contact --*/
+  .page-title-area-two {
+    height: 350px;
+  }
+  .page-title-area-two .page-title-text {
+    margin-top: 30px;
+  }
+  .contact-form-four .location-item .location-icon i {
+    top: 20px;
+  }
+  .contact-form-four .location-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .contact-form-four .location-item ul li {
+    font-size: 13px;
+  }
+  /*-- End Contact --*/
+  /*-- Map --*/
+  #map {
+    height: 430px;
+  }
+  /*-- End Map --*/
+  /*----- End Contact Page -----*/
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /*-- Default CSS --*/
+  body {
+    font-size: 14px;
+  }
+  .ptb-100 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .pt-100 {
+    padding-top: 70px;
+  }
+  .pb-70 {
+    padding-bottom: 40px;
+  }
+  .pb-100 {
+    padding-bottom: 70px;
+  }
+  /*-- End Default CSS --*/
+  /*----- Home Page 1 -----*/
+  /*-- Navbar --*/
+  .mobile-nav .logo {
+    width: 75px;
+  }
+  .mobile-nav.mean-container .mean-nav ul li a.active {
+    color: #b69d74;
+  }
+  .mobile-nav nav .navbar-nav {
+    height: 350px;
+    overflow-y: scroll;
+  }
+  .side-nav {
+    display: none;
+  }
+  /*-- End Navbar --*/
+  /*-- Banner --*/
+  .banner-area {
+    height: 100%;
+    padding-top: 130px;
+    padding-bottom: 200px;
+    text-align: center;
+  }
+  .banner-item .banner-left {
+    margin-top: 0;
+  }
+  .banner-item .banner-left h1 {
+    margin-bottom: 25px;
+    font-size: 30px;
+  }
+  .banner-item .banner-left p {
+    font-size: 14px;
+  }
+  .banner-item .banner-left a {
+    padding: 14px 18px;
+  }
+  .banner-item .banner-right img {
+    bottom: -30px;
+  }
+  @keyframes banner-animation {
+    50% {
+      transform: translate(0, -30px);
+    }
+  }
+  .banner-bottom {
+    border-top: 15px solid rgba(182, 157, 116, 0.3490196078);
+    border-bottom: 15px solid rgba(182, 157, 116, 0.3490196078);
+    border-left: 15px solid rgba(182, 157, 116, 0.3490196078);
+    border-right: 15px solid rgba(182, 157, 116, 0.3490196078);
+    bottom: -55px;
+    left: 20px;
+  }
+  .banner-bottom ul li:last-child {
+    padding-right: 88px;
+    padding-top: 26px;
+  }
+  /*-- End Banner --*/
+  /*-- Help --*/
+  .help-area {
+    padding-top: 125px;
+  }
+  .help-left {
+    margin-right: auto;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .help-left:before {
+    border: 15px solid #b69d74;
+  }
+  .help-item .help-right {
+    max-width: 100%;
+    margin-left: 20px;
+  }
+  .help-item .help-right h2 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .help-item .help-right p {
+    margin-bottom: 15px;
+  }
+  .help-item .help-right .help-inner-left ul li {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .help-item .help-right .help-inner-left ul li i {
+    margin-right: 6px;
+    font-size: 18px;
+  }
+  .help-item .help-right .help-inner-right ul li {
+    font-size: 15px;
+    margin-bottom: 8px;
+  }
+  .help-item .help-right .help-inner-right ul li i {
+    margin-right: 6px;
+    font-size: 18px;
+  }
+  .help-item .help-right .help-signature img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .cmn-btn {
+    font-size: 15px;
+    padding: 12px 25px;
+  }
+  /*-- End Help --*/
+  /*-- Practice --*/
+  .section-title {
+    margin-bottom: 40px;
+    margin-top: -5px;
+  }
+  .section-title span {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+  .section-title h2 {
+    font-size: 25px;
+  }
+  .practice-item {
+    padding: 30px 20px;
+  }
+  .practice-item .practice-icon i {
+    margin-bottom: 28px;
+  }
+  .practice-item h3 {
+    margin-bottom: 18px;
+    font-size: 23px;
+  }
+  .practice-item a {
+    padding: 12px 24px;
+  }
+  /*-- End Practice --*/
+  /*-- Expertise --*/
+  .expertise-area {
+    padding-top: 70px;
+  }
+  .expertise-item ul li {
+    margin-bottom: 40px;
+  }
+  .expertise-item ul li:last-child {
+    margin-bottom: 40px;
+  }
+  .expertise-item ul li .expertise-icon i {
+    font-size: 40px;
+    left: 25px;
+  }
+  .expertise-item ul li h3 {
+    padding-left: 120px;
+    font-size: 24px;
+    margin-bottom: 14px;
+  }
+  .expertise-item ul li p {
+    padding-left: 120px;
+    font-size: 14px;
+  }
+  /*-- End Expertise --*/
+  /*-- Portfolio --*/
+  .portfolio-area .text-center {
+    margin-top: 15px;
+  }
+  .portfolio-item .portfolio-inner span {
+    margin-bottom: 16px;
+  }
+  .portfolio-item .portfolio-inner h3 a {
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+  .portfolio-item .portfolio-inner p {
+    font-size: 13px;
+  }
+  /*-- End Portfolio --*/
+  /*-- Team --*/
+  .team-area {
+    padding-bottom: 130px;
+  }
+  .team-item .team-inner span {
+    font-size: 13px;
+  }
+  /*-- End Team --*/
+  /*-- Location --*/
+  .loaction-area {
+    top: -70px;
+  }
+  .location-bg {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .location-item {
+    padding-left: 90px;
+  }
+  .location-item .location-icon i {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 26px;
+    position: absolute;
+    left: 32px;
+    top: 22px;
+  }
+  .location-item h3 {
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .location-item ul li {
+    font-size: 14px;
+  }
+  /*-- End Location --*/
+  /*-- Contact Form --*/
+  .contact-wrap .form-group .form-control {
+    height: 50px;
+    padding-left: 20px;
+    font-size: 14px;
+  }
+  .contact-btn {
+    font-size: 14px;
+    padding: 14px 28px;
+  }
+  .list-unstyled {
+    font-size: 14px;
+  }
+  .text-danger {
+    margin-top: 15px;
+    font-size: 22px;
+  }
+  .text-success {
+    margin-top: 15px;
+    font-size: 22px;
+  }
+  /*-- End Contact Form --*/
+  /*-- Blog --*/
+  .blog-area {
+    padding-bottom: 135px;
+  }
+  .blog-item .blog-inner ul li {
+    font-size: 13px;
+  }
+  .blog-item .blog-inner ul li a {
+    font-size: 13px;
+  }
+  .blog-item .blog-inner p {
+    margin-bottom: 15px;
+    color: #646464;
+  }
+  .blog-item .blog-inner .blog-link {
+    font-size: 16px;
+  }
+  /*-- End Blog --*/
+  /*-- Newsletter --*/
+  .newsletter-area {
+    top: -70px;
+  }
+  .newsletter-area h2 {
+    font-size: 26px;
+    margin-bottom: 24px;
+  }
+  .newsletter-area .newsletter-form .form-control {
+    height: 43px;
+  }
+  .newsletter-area .newsletter-form .contact-btn {
+    padding: 11px 20px 12px;
+  }
+  /*-- End Newsletter --*/
+  /*-- Footer --*/
+  footer .footer-item .footer-logo a img {
+    margin-bottom: 25px;
+  }
+  footer .footer-item .footer-logo p {
+    margin-bottom: 20px;
+  }
+  footer .footer-item .footer-logo ul {
+    margin: 0;
+    padding: 0;
+  }
+  footer .footer-item .footer-logo ul li {
+    margin-right: 14px;
+  }
+  footer .footer-item .footer-logo ul li a {
+    font-size: 18px;
+  }
+  footer .footer-item .footer-service h3 {
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+  footer .footer-item .footer-service ul li {
+    margin-bottom: 16px;
+  }
+  footer .footer-item .footer-find h3 {
+    margin-bottom: 25px;
+    font-size: 18px;
+  }
+  footer .footer-item .footer-find ul li {
+    margin-bottom: 16px;
+  }
+  footer .footer-item .footer-find ul li i {
+    font-size: 20px;
+  }
+  footer .copyright-area {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+  }
+  /*-- End Footer --*/
+  /*----- End Home Page 1 -----*/
+  /*----- Back To Top -----*/
+  #toTop {
+    bottom: 50px;
+  }
+  .back-to-top-btn i {
+    margin-right: 20px;
+  }
+  /*----- End Back To Top -----*/
+  /*----- Home Page 2 -----*/
+  /*-- Banner --*/
+  .banner-area-two {
+    padding-bottom: 125px;
+  }
+  .banner-area-two .banner-item .banner-right img {
+    bottom: -65px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /*-- End Banner --*/
+  /*-- Counter --*/
+  .counter-area {
+    background-color: #fefaf3;
+  }
+  .counter-bg {
+    top: -70px;
+  }
+  .counter-item i {
+    font-size: 38px;
+    left: 0;
+  }
+  .counter-item .counter-inner {
+    padding-left: 50px;
+  }
+  .counter-item .counter-inner h3 {
+    font-size: 28px;
+  }
+  .counter-item .counter-inner p {
+    font-size: 14px;
+  }
+  /*-- End Counter --*/
+  /*-- Help --*/
+  .help-area-two {
+    padding-top: 0;
+  }
+  .help-area-two .help-shape img {
+    right: 0;
+    left: 50px;
+  }
+  .help-area-two .help-left:before {
+    z-index: 1;
+  }
+  .help-area-two .help-left img {
+    width: 100%;
+    z-index: 2;
+    position: relative;
+  }
+  .help-area-two .help-item .help-right p {
+    margin-bottom: 20px;
+  }
+  .help-area-two .help-item .help-right .help-signature img {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .help-area-two .help-item .help-right h3 {
+    font-weight: 600;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  .help-area-two .help-item .help-right span {
+    display: block;
+    color: #333333;
+    font-size: 14px;
+  }
+  .help-area-two .help-wrap .help-item .help-right {
+    margin-left: 20px;
+    margin-right: 0;
+  }
+  .help-area-two .help-wrap .help-item .cmn-btn {
+    margin-top: 25px;
+  }
+  .help-area-two .help-wrap .help-left {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .help-area-two .help-wrap .help-left:before {
+    right: 0;
+  }
+  /*-- End Help --*/
+  /*-- Expertise --*/
+  .expertise-area-two .expertise-item ul li .expertise-icon {
+    top: 12px;
+  }
+  /*-- End Expertise --*/
+  /*----- End Home Page 2 -----*/
+  /*----- Home Page 3 -----*/
+  /*-- Home Slider --*/
+  .slider-item {
+    height: 100%;
+    padding-top: 130px;
+    padding-bottom: 150px;
+    text-align: center;
+  }
+  .slider-text h1 {
+    font-size: 28px;
+  }
+  .slider-text h1:before {
+    display: none;
+  }
+  .slider-text span {
+    font-size: 42px;
+  }
+  .slider-text p {
+    margin-bottom: 35px;
+    font-size: 18px;
+  }
+  .slider-text a {
+    padding: 13px 20px;
+  }
+  .slider-shape .s-s-one {
+    top: 30px;
+  }
+  .slider-shape .s-s-two {
+    top: 30px;
+  }
+  .slider-shape .s-s-three {
+    top: 30px;
+  }
+  .home-slider .owl-prev {
+    top: 44%;
+    width: 55px;
+    height: 55px;
+    font-size: 26px !important;
+    line-height: 55px !important;
+  }
+  .home-slider .owl-next {
+    top: 44%;
+    width: 55px;
+    height: 55px;
+    font-size: 26px !important;
+    line-height: 55px !important;
+  }
+  .home-slider.owl-theme .owl-dots {
+    bottom: 120px;
+  }
+  /*-- End Home Slider --*/
+  /*-- Slider Bottom --*/
+  .slider-bottom-area .slider-bottom-wrap {
+    padding-top: 30px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    top: -70px;
+  }
+  /*-- End Slider Bottom --*/
+  /*-- Counter --*/
+  .counter-area-two {
+    background-color: transparent;
+  }
+  .counter-area-two .counter-bg {
+    top: -80px;
+  }
+  /*-- End Counter --*/
+  /*-- Help --*/
+  .help-area-three {
+    padding-top: 0;
+  }
+  /*-- End Help --*/
+  /*----- End Home Page 3 -----*/
+  /*----- About Page -----*/
+  /*-- Page Title --*/
+  .page-title-area-three .page-title-text {
+    margin-top: 50px;
+  }
+  .page-title-area {
+    height: 370px;
+  }
+  .page-title-text {
+    margin-top: 65px;
+  }
+  .page-title-text h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  .page-title-text ul li {
+    font-size: 15px;
+  }
+  .page-title-text .page-title-btn a {
+    border: 2px solid #b69d74;
+    padding: 11px 22px;
+    font-size: 14px;
+  }
+  .page-title-text .page-title-btn a i {
+    font-size: 18px;
+  }
+  /*-- End Page Title --*/
+  /*-- Help --*/
+  .help-area-four {
+    padding-top: 70px;
+  }
+  /*-- End Help --*/
+  /*-- About --*/
+  .about-area {
+    padding-bottom: 110px;
+  }
+  .about-item .about-video-wrap a {
+    left: 48%;
+  }
+  .about-item .about-content {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .about-item .about-content h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .about-item .about-information h2 {
+    font-size: 17px;
+    margin-bottom: 8px;
+  }
+  /*-- End About --*/
+  /*----- End About Page -----*/
+  /*----- Attorneys Page -----*/
+  /*-- Team --*/
+  .team-area-two {
+    padding-bottom: 110px;
+  }
+  /*-- End Team --*/
+  /*----- End Attorneys Page -----*/
+  /*----- Attorneys Details Page -----*/
+  /*-- Attorneys Details --*/
+  .attor-details-item .attor-details-left {
+    padding: 0 50px 40px 50px;
+    box-shadow: 0px 0px 20px 0px #ddd;
+    margin-bottom: 30px;
+  }
+  .attor-details-item .attor-details-left .attor-social {
+    text-align: center;
+    margin-top: -28px;
+  }
+  .attor-details-item .attor-details-left .attor-social ul {
+    margin: 0;
+    padding: 0;
+    background-color: #282828;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px #ddd;
+    margin-bottom: 25px;
+  }
+  .attor-details-item .attor-details-left .attor-social ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 4px;
+    margin-left: 4px;
+  }
+  .attor-details-item .attor-details-left .attor-social ul li a {
+    display: block;
+    color: #b69d74;
+    font-size: 18px;
+  }
+  .attor-details-item .attor-details-left .attor-social ul li a:hover {
+    color: #ffffff;
+  }
+  .attor-details-item .attor-details-left .attor-social-details h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .attor-details-item .attor-details-left .attor-social-details ul li {
+    margin-bottom: 10px;
+  }
+  .attor-details-item .attor-details-left .attor-social-details ul li i {
+    font-size: 16px;
+  }
+  .attor-details-item .attor-details-left .attor-work h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  .attor-details-item .attor-prev {
+    margin-bottom: 30px;
+  }
+  .attor-details-item .attor-prev ul li a {
+    padding: 7px 16px;
+  }
+  .attor-details-item .attor-details-right .attor-details-name {
+    margin-bottom: 30px;
+  }
+  .attor-details-item .attor-details-right .attor-details-name h2 {
+    font-size: 25px;
+    margin-bottom: 12px;
+  }
+  .attor-details-item .attor-details-right .attor-details-name span {
+    font-size: 16px;
+  }
+  .attor-details-item .attor-details-right .attor-details-things h3 {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+  .attor-details-item .attor-details-right .attor-details-things p {
+    margin-bottom: 15px;
+  }
+  /*-- End Attorneys Details --*/
+  /*-- Contact Form --*/
+  .contact-form-two h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .contact-form-two .contact-wrap {
+    padding: 30px 40px;
+  }
+  /*-- End Contact Form --*/
+  /*----- End Attorneys Details Page -----*/
+  /*----- Case Studies Page -----*/
+  /*-- Portfolio --*/
+  .portfolio-area-two {
+    padding-bottom: 140px;
+  }
+  /*-- End Portfolio --*/
+  /*----- End Case Studies Page -----*/
+  /*----- Case Studies Details Page -----*/
+  /*-- Case Details Img --*/
+  .case-details-item h3 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  /*-- End Case Details Img --*/
+  /*-- Case Details Tab --*/
+  .case-details-tab {
+    padding-top: 65px;
+  }
+  .case-details-tab .case-details-tab-item h2 {
+    font-size: 25px;
+    margin-bottom: 24px;
+  }
+  .case-details-tab .case-details-tab-item .nav-pills {
+    margin-bottom: 15px;
+  }
+  .case-details-tab .case-details-tab-item .tab-content h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .case-details-tab .case-details-tab-item .tab-content p {
+    margin-bottom: 30px;
+  }
+  /*-- End Case Details Tab --*/
+  /*-- Portfolio --*/
+  .portfolio-area-three {
+    padding-bottom: 110px;
+  }
+  /*-- End Portfolio --*/
+  /*----- End Case Studies Details Page -----*/
+  /*----- Blog Details Page -----*/
+  /*-- Blog Details --*/
+  .blog-details-item .blog-details-img {
+    padding-bottom: 10px;
+  }
+  .blog-details-item .blog-details-img img {
+    margin-bottom: 25px;
+  }
+  .blog-details-item .blog-details-img h2 {
+    font-size: 20px;
+  }
+  .blog-details-item .blog-details-social {
+    padding-top: 15px;
+    margin-bottom: 15px;
+  }
+  .blog-details-item .blog-details-social ul li a {
+    font-size: 20px;
+    margin-right: 6px;
+  }
+  .blog-details-item .blog-details-nav {
+    margin-bottom: 30px;
+  }
+  .blog-details-item .blog-details-nav a {
+    padding: 8px 18px;
+  }
+  .blog-details-item .blog-details-contact h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .blog-details-item .blog-details-search {
+    margin-bottom: 40px;
+  }
+  .blog-details-item .blog-details-search h3 {
+    font-size: 20px;
+  }
+  .blog-details-item .blog-details-search ul li {
+    margin-bottom: 60px;
+  }
+  .blog-details-item .blog-details-tags {
+    padding: 50px 55px 45px;
+    box-shadow: 0px 0px 20px 0px #ddd;
+  }
+  .blog-details-item .blog-details-tags h3 {
+    font-size: 20px;
+  }
+  .blog-details-item .blog-details-tags ul li a {
+    padding: 8px 20px;
+  }
+  .blog-details-category {
+    margin-bottom: 40px;
+  }
+  .blog-details-category h3 {
+    font-size: 20px;
+  }
+  .blog-details-category ul li a {
+    font-size: 15px;
+  }
+  .blog-area-three {
+    padding-bottom: 110px;
+  }
+  /*-- End Blog Details --*/
+  /*----- End Blog Details Page -----*/
+  /*----- Practice Page -----*/
+  /*-- Practice --*/
+  .practice-area-two {
+    padding-bottom: 110px;
+  }
+  /*-- End Practice --*/
+  /*----- End Practice Page -----*/
+  /*----- Practice Details Page -----*/
+  /*-- Practice --*/
+  .practice-details-area {
+    padding-bottom: 140px;
+  }
+  .practice-details-item .practice-details-content {
+    margin-bottom: 40px;
+  }
+  .practice-details-item .practice-details-content .section-title {
+    margin-bottom: 25px;
+  }
+  .practice-details-item .blog-details-category {
+    margin-bottom: 40px;
+  }
+  .practice-details-item .practice-details-contact {
+    margin-bottom: 40px;
+  }
+  .practice-details-item .practice-details-contact h3 {
+    font-size: 20px;
+  }
+  .practice-details-item .practice-details-brochures h3 {
+    font-size: 20px;
+  }
+  .practice-details-item .practice-details-brochures .cmn-btn i {
+    font-size: 17px;
+  }
+  /*-- End Practice --*/
+  /*----- End Practice Details Page -----*/
+  /*----- Appointment Page -----*/
+  /*-- Team --*/
+  .team-area-three {
+    padding-bottom: 40px;
+  }
+  .contact-form-three {
+    padding-bottom: 140px;
+  }
+  /*-- End Team --*/
+  /*----- End Appointment Page -----*/
+  /*----- Testimonial Page -----*/
+  /*-- Testimonial --*/
+  .testimonial-area {
+    padding-bottom: 140px;
+  }
+  /*-- End Testimonial --*/
+  /*----- End Testimonial Page -----*/
+  /*----- FAQ Page -----*/
+  /*-- Faq --*/
+  .faq-area {
+    padding-bottom: 140px;
+  }
+  .faq-head h2 {
+    margin-bottom: 22px;
+    font-size: 22px;
+  }
+  .faq-wrap {
+    margin-bottom: 40px;
+  }
+  .faq-wrap:last-child {
+    margin-bottom: 0;
+  }
+  .accordion p {
+    font-size: 14px;
+  }
+  .accordion a {
+    font-size: 16px;
+    padding-right: 20px;
+  }
+  /*-- End Faq --*/
+  /*----- End Faq Page -----*/
+  /*----- Error Page -----*/
+  /*-- 404 --*/
+  .error-item {
+    height: 710px;
+    margin-top: -35px;
+  }
+  .error-item h1 {
+    font-size: 100px;
+  }
+  .error-item p {
+    font-size: 25px;
+  }
+  .error-item a {
+    padding: 16px 35px;
+    margin-top: 50px;
+    font-size: 15px;
+  }
+  /*-- End 404 --*/
+  /*----- End Error Page -----*/
+  /*----- Privacy Policy Page -----*/
+  /*-- Privacy --*/
+  .privacy-area {
+    padding-bottom: 100px;
+  }
+  .privacy-item {
+    margin-bottom: 40px;
+  }
+  .privacy-item h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .privacy-item ul li {
+    margin-bottom: 14px;
+  }
+  /*-- End Privacy --*/
+  /*----- End Privacy Policy Page -----*/
+  /*----- Contact Page -----*/
+  /*-- Contact --*/
+  .page-title-area-two {
+    height: 380px;
+  }
+  .contact-form-four .location-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .contact-form-four .location-item ul li {
+    font-size: 13px;
+  }
+  /*-- End Contact --*/
+  /*-- Map --*/
+  #map {
+    height: 500px;
+  }
+  /*-- End Map --*/
+  /*----- End Contact Page -----*/
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .main-nav nav .navbar-nav .nav-item a {
+    font-size: 14px;
+  }
+  .navbar-brand {
+    width: 100px;
+  }
+  .main-nav nav .navbar-nav .nav-item a {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .side-nav a {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+  .help-item .help-right .help-inner-left ul li {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .help-item .help-right .help-inner-right ul li {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .practice-item p {
+    font-size: 15px;
+  }
+  .team-item .team-inner h3 a {
+    font-size: 17px;
+  }
+  footer .footer-item .footer-logo p {
+    font-size: 14px;
+  }
+  footer .footer-item .footer-service ul li a {
+    font-size: 14px;
+  }
+  footer .footer-item .footer-find ul li {
+    font-size: 14px;
+  }
+  .slider-bottom-area .slider-bottom-wrap .banner-bottom ul li:last-child {
+    padding-right: 20px;
+  }
+  .slider-bottom-area .slider-bottom-wrap {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .help-area-two .help-wrap .help-left:before {
+    display: none;
+  }
+  .slider-shape .s-s-one {
+    top: 0;
+  }
+  .slider-shape .s-s-two {
+    top: 0;
+  }
+  .slider-shape .s-s-three {
+    top: 0;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .mean-container a.meanmenu-reveal span {
+    position: relative;
+    top: 10px;
+    margin-top: -10px;
+  }
+  .mean-container .mean-nav ul li a.mean-expand {
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=responsive.css.map */

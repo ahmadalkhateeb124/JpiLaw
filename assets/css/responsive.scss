@@ -1,0 +1,2675 @@
+@media only screen and (max-width: 767px) {
+
+    $all-size: 14px;
+    $gold-color: #b69d74;
+    $white-color: #ffffff;
+
+    /*-- Default CSS --*/
+    body {
+        font-size: $all-size;
+    }
+    .ptb-100 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .pt-100 {
+        padding-top: 50px;
+    }
+    .pb-70 {
+        padding-bottom: 20px;
+    }
+    .pb-100 {
+        padding-bottom: 50px;
+    }
+    /*-- End Default CSS --*/
+
+    /*----- Home Page 1 -----*/
+    /*-- Navbar --*/
+    .mobile-nav .logo {
+        width: 80px;
+    }
+    .mobile-nav.mean-container .mean-nav ul li a.active {
+        color: $gold-color;
+    }
+    .mobile-nav nav .navbar-nav {
+        height: 350px;
+        overflow-y: scroll;
+    }
+    .side-nav {
+        display: none;
+    }
+    /*-- End Navbar --*/
+
+    /*-- Banner --*/
+    .banner-area {
+        height: 100%;
+        text-align: center;
+        padding-top: 120px;
+        padding-bottom: 150px;
+    }
+    .banner-item {
+        .banner-left {
+            margin-top: 0;
+
+            h1 {
+                margin-bottom: 20px;
+                font: {
+                    size: 28px;
+                }
+                line-height: 38px;
+            }
+            p {
+                margin-bottom: 30px;
+                font-size: 15px;
+            }
+            a {
+                padding: 15px 18px;
+                font-size: 13px;
+            }
+        }
+        .banner-right {
+            img {
+                bottom: -30px;
+            }
+        }
+    }
+    @keyframes banner-animation {
+        50% {
+            transform: translate(0, -20px);
+        }
+    }
+    .banner-bottom {
+        border-top: 5px solid #b69d7459;
+        border-bottom: 5px solid #b69d7459;
+        border-left: 5px solid #b69d7459;
+        border-right: 5px solid #b69d7459;
+        bottom: -40px;
+        left: 20px;
+
+        ul {
+            li {
+                i {
+                    line-height: 75px;
+                    font-size: 35px;
+                }
+                &:last-child {
+                    padding-left: 15px;
+                    padding-right: 75px;
+                    padding-top: 12px;
+                    padding-bottom: 18px;
+                    text-align: left;
+
+                    p {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+    /*-- End Banner --*/
+
+    /*-- Help --*/
+    .help-area {
+        padding-top: 90px;
+    }
+    .help-shape {
+        img {
+            right: 20px;
+        }
+    }
+    .help-left {
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        &:before {
+            left: -35px;
+            border: 10px solid #b69d74;
+        }
+    }
+    .help-item {
+        .help-right {
+            max-width: 100%;
+            margin-left: 0;
+
+            h2 {
+                font: {
+                    size: 22px;
+                }
+                margin-bottom: 15px;
+            }
+            p {
+                margin-bottom: 15px;
+            }
+            .help-inner-left {
+                width: 100%;
+
+                ul {
+                    li {
+                        font-size: 14px;
+                        margin-bottom: 8px;                    
+
+                        i {
+                            margin-right: 8px;
+                            font-size: 18px;
+                            top: 3px;
+                        }
+                    }
+                }
+            }
+            .help-inner-right {
+                width: 100%;
+
+                ul {
+                    li {
+                        font-size: 14px;
+                        margin-bottom: 8px;   
+
+                        i {
+                            margin-right: 8px;
+                            font-size: 18px;
+                            top: 3px;
+                        }
+                    }
+                }
+            }
+            .help-signature {
+                img {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .cmn-btn {
+        font-size: 14px;
+        padding: 11px 25px;
+
+    }
+    /*-- End Help --*/
+
+    /*-- Practice --*/
+    .section-title {
+        margin-bottom: 30px;
+        margin-top: -4px;
+
+        span {
+            font-size: 12px;
+            margin-bottom: 7px;
+        }
+        h2 {
+            font: {
+                size: 22px;
+            }
+        }
+    }
+    .practice-item {
+        padding: 30px 15px;
+
+        .practice-icon {
+            i {
+                font-size: 30px;
+                position: relative;
+                top: -5px;            
+            }
+        }
+        h3 {
+            margin-bottom: 16px;
+            font: {
+                size: 20px;
+            }
+        }
+        p {
+            margin-bottom: 22px;
+        }
+        a {
+            padding: 10px 22px;
+        }
+    }
+    /*-- End Practice --*/
+
+    /*-- Expertise --*/
+    .expertise-area {
+        padding-top: 50px;  
+    }
+    .expertise-item {
+        ul {
+            li {
+                margin-bottom: 40px;
+
+                &:last-child {
+                    margin-bottom: 30px;
+                }
+                .expertise-icon {
+                    i {
+                        font-size: 40px;
+                        left: 26px;
+                        top: 26px;
+                    }
+                }
+                h3 {
+                    padding-left: 110px;
+                    font: {
+                        size: 20px;
+                    }
+                    margin-bottom: 14px;
+                }
+                p {
+                    padding-left: 110px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .expertise-image {
+        padding-top: 50px;
+
+        &:before {
+            border: 5px solid $gold-color;
+        }
+    }
+    /*-- End Expertise --*/
+
+    /*-- Portfolio --*/
+    .portfolio-area {
+        .text-center {
+            margin-top: 0;
+        }
+    }
+    .portfolio-item {
+        .portfolio-inner {
+            padding: 15px;
+
+            span {
+                margin-bottom: 15px;
+                padding-bottom: 5px;
+            }
+            h3 {
+                a {
+                    font-size: 18px;
+                    margin-bottom: 4px;
+                }
+            }
+        }
+    }
+    /*-- End Portfolio --*/
+
+    /*-- Team --*/
+    .team-area {
+        padding-bottom: 90px;
+    }
+    .team-item {
+        .team-inner {
+            h3 {
+                padding-top: 18px;
+            }
+            span {
+                font-size: 13px;
+            }
+        }
+    }
+    /*-- End Team --*/
+
+    /*-- Location --*/
+    .loaction-area {
+        top: -50px;
+    }
+    .location-bg {
+        padding-top: 30px;
+        padding-bottom: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .location-item {
+        padding-left: 90px;
+
+        .location-icon {
+            i {
+                font-size: 22px;
+                left: 32px;
+            }
+        }
+        h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        ul {
+            li {
+                font-size: 13px;
+            }
+        }
+        .location-link {
+            display: block;
+            color: #282828;
+            margin-top: 10px;
+
+            &:hover {
+                color: $white-color;
+            }
+        }
+    }
+    /*-- End Location --*/
+
+    /*-- Contact Form --*/
+    .contact-wrap {
+        max-width: 970px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .form-group {
+            .form-control {
+                height: 50px;
+                padding-left: 20px;
+                font-size: 14px;
+            }
+        }
+    }
+    .contact-btn {
+        font-size: $all-size;
+        padding: 12px 28px;
+    }
+    .list-unstyled {
+        font-size: 14px;
+    }
+    .text-danger {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+    .text-success {
+        margin-top: 16px;
+        font-size: 16px;
+    }
+    /*-- End Contact Form --*/
+
+    /*-- Blog --*/
+    .blog-area {
+        padding-bottom: 100px;
+    }
+    .blog-item {
+        margin-left: 10px;
+        margin-right: 10px;
+
+        .blog-inner {
+            padding: 0 15px 25px 15px;
+
+            span {
+                font-size: 13px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                max-width: 135px;
+                margin-bottom: 20px;
+            }
+            h3 {
+                margin-bottom: 15px;
+
+                a {
+                    font-size: 15px;
+                }
+            }
+            ul {
+                margin-bottom: 10px;
+
+                li {
+                    margin-right: 15px;
+                }
+            }
+            p {
+                margin-bottom: 10px;
+            }
+            .blog-link {
+                font-size: 15px;
+
+                i {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    /*-- End Blog --*/
+
+    /*-- Newsletter --*/
+    .newsletter-area {
+        top: -50px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+
+        img {
+            max-width: 185px;
+        }
+        h2 {
+            font: {
+                size: 20px;
+            }
+            margin-bottom: 20px;
+        }
+        .newsletter-form {
+            .form-control {
+                padding-left: 15px;
+                font-size: 14px;
+            }
+            .contact-btn {
+                padding: 13px 20px;
+                font-size: 13px;
+            }
+        }
+    }
+    /*-- End Newsletter --*/
+
+    /*-- Footer --*/
+    footer {
+        .footer-item {
+            .footer-logo {
+                a {
+                    img {
+                        margin-bottom: 25px;
+                        width: 90px;
+                    }
+                }
+                p {
+                    margin-bottom: 20px;
+                }
+                ul {
+                    li {
+                        margin-right: 15px;
+
+                        a {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .footer-service {
+                h3 {
+                    margin-bottom: 22px;
+                    font-size: 18px;
+                }
+                ul {
+                    li {
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+            .footer-find {
+                h3 {
+                    margin-bottom: 22px;
+                    font-size: 18px;
+                }
+                ul {
+                    li {
+                        margin-bottom: 16px;
+
+                        i {
+                            font-size: 21px;
+                            margin-right: 4px;
+                        }
+                    }
+                }
+            }
+        }
+        .copyright-area {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-top: 20px;
+            text-align: center;
+
+            .copyright-item {
+                p {
+                    margin-bottom: 3px;
+                }
+            }
+            .copyright-right {
+                text-align: center;
+            }
+        }
+    }
+    /*-- End Footer --*/
+    /*----- End Home Page 1 -----*/
+
+    /*----- Back To Top -----*/
+    #toTop {
+        bottom: 90px;
+    }
+    .back-to-top-btn {
+        i {
+            height: 48px;
+            width: 48px;
+            line-height: 48px;
+        }
+    }
+    /*----- End Back To Top -----*/
+
+    /*----- Home Page 2 -----*/
+    /*-- Banner --*/
+    .banner-area-two {
+        .banner-item {
+            .banner-right {
+                img {
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+    /*-- End Banner --*/
+
+    /*-- Counter --*/
+    .counter-bg {
+        padding-top: 30px;
+        padding-bottom: 0;
+        top: 0;
+    }
+    .counter-item {
+        i {
+            font-size: 28px;
+            left: 0;
+        }
+        .counter-inner {
+            padding-left: 36px;
+
+            h3 {
+                font-size: 26px;
+            }
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+    /*-- End Counter --*/
+
+    /*-- Help --*/
+    .help-area-two {
+        padding-top: 50px;
+        
+        .help-shape {
+            img {
+                left: 0;
+            }
+        }
+        .help-wrap {
+            .help-item {
+                .help-right {
+                    margin-left: 0;
+                    margin-right: 0;
+                }
+                .cmn-btn {
+                    margin-top: 25px;
+                }
+            }
+            .help-left {
+                padding-top: 0;
+                padding-bottom: 0;
+
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+    /*-- End Help --*/
+
+    /*-- Expertise --*/
+    .expertise-area-two {
+        .expertise-item {
+            ul {
+                li {
+                    padding: 14px 14px 20px 20px;
+
+                    .expertise-icon {
+                        left: 20px;
+                        top: 25px;
+                    }
+                }
+            }
+        }
+    }
+    /*-- End Expertise --*/
+    /*----- End Home Page 2 -----*/
+
+    /*----- Home Page 3 -----*/
+    /*-- Home Slider --*/
+    .slider-item {
+        height: 100%;
+        padding-top: 130px;
+        padding-bottom: 140px;
+        text-align: center;
+    }
+    .slider-text  {
+        h1 {
+            font: {
+                size: 21px;
+            }
+            margin-bottom: 20px;
+
+            &:before {
+                display: none;
+            }
+        }
+        span {
+            font-size: 35px;
+            margin-bottom: 5px;
+        }
+        p {
+            margin-bottom: 40px;
+            font: {
+                size: 15px;
+            }
+        }
+        a {
+            padding: 15px 18px;
+            font-size: 13px;
+        }
+    }
+    .slider-shape {
+        .s-s-one {
+            top: 30px;
+        }
+        .s-s-two {
+            top: 30px;
+        }
+        .s-s-three {
+            top: 30px;
+        }
+    }
+    .home-slider {
+        .owl-prev {
+            top: 42%;
+            left: 4px;
+            width: 45px;
+            height: 45px;
+            font-size: 25px !important;
+            line-height: 45px !important;
+        }
+        .owl-next {
+            top: 42%;
+            right: 4px;
+            width: 45px;
+            height: 45px;
+            font-size: 25px !important;
+            line-height: 45px !important;
+        }
+    }
+    .home-slider.owl-theme {
+        .owl-dots {
+            bottom: 80px;
+        }
+    }
+    /*-- End Home Slider --*/
+
+    /*-- Slider Bottom --*/
+    .slider-bottom-area {
+        .slider-bottom-wrap {
+            padding-top: 30px;
+            padding-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+            top: 0;
+        }
+    }
+    /*-- End Slider Bottom --*/
+
+    /*-- Help --*/
+    .help-area-three {
+        padding-top: 50px;
+    }
+    /*-- End Help --*/
+
+    /*-- Counter --*/
+    .counter-area-two {
+        top: -55px;
+        position: relative;
+    }
+    /*-- End Counter --*/
+    /*----- End Home Page 3 -----*/
+
+    /*----- About Page -----*/
+    /*-- Page Title --*/
+    .page-title-area-three {
+        .page-title-text {
+            margin-top: 50px;
+        }
+    }
+    .page-title-area {
+        height: 350px;
+    }
+    .page-title-text {
+        margin-top: 70px;
+
+        h2 {
+            font: {
+                size: 25px;
+            }
+            margin-bottom: 15px;
+        }
+        ul {
+            li {
+                font-size: 14px;
+
+                i {
+                    font-size: 18px;
+                    top: 2px;
+                }
+            }
+        }
+        .page-title-btn {
+            a {
+                border: 2px solid #b69d74;
+                padding: 9px 20px;
+                font-size: 13px;
+        
+                i {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    /*-- End Page Title --*/
+
+    /*-- Help --*/
+    .help-area-four {
+        padding-top: 50px;
+    }
+    /*-- End Help --*/
+
+    /*-- About --*/
+    .about-area {
+        padding-bottom: 70px;
+    }
+    .about-item {
+        .about-video-wrap {
+            a {
+                top: 39%;
+                left: 43%;
+                width: 55px;
+                height: 55px;
+                line-height: 55px;
+            }
+        }
+        .about-content {
+            h2 {
+                font: {
+                    size: 20px;
+                }
+            }
+        }
+        .about-legal {
+            ul {
+                li {
+                    margin-right: 5px;
+                    margin-bottom: 10px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .banner-bottom {
+                        left: 0;
+
+                        ul {
+                            li {
+                                margin-bottom: 0;
+
+                                &:last-child {
+                                    position: relative;
+                                    top: 2px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .about-information {
+            h2 {
+                margin-bottom: 12px;
+            }
+        }
+    }
+    /*-- End About --*/
+    /*----- End About Page -----*/
+
+    /*----- Attorneys Page -----*/
+    /*-- Team --*/
+    .team-area-two {
+        padding-bottom: 70px;
+    }
+    /*-- End Team --*/
+    /*----- End Attorneys Page -----*/
+
+    /*----- Attorneys Details Page -----*/
+    /*-- Attorneys Details --*/
+    .attor-details-item {
+        .attor-details-left {
+            padding: 0 15px 25px 15px;
+
+            .attor-social {
+                ul {
+                    padding: 8px 25px;
+                    margin-bottom: 20px;
+                }
+            }
+            .attor-social-details {
+                margin-bottom: 30px;
+
+                h3 {
+                    font: {
+                        size: 20px;
+                    }
+                    margin-bottom: 15px;
+                }
+                ul {
+                    li {
+                        margin-bottom: 10px;
+                        font-size: 13px;
+
+                        i {
+                            font-size: 17px;
+                        }
+                    }
+                }
+            }
+            .attor-work {
+                h3 {
+                    font: {
+                        size: 20px;
+                    }
+                    margin-bottom: 15px;
+                }
+                .attor-work-left {
+                    ul {
+                        li {
+                            &:before {
+                                width: 28px;
+                                height: 1px;
+                                top: 10px;
+                                right: -40px;
+                            }
+                        }
+                    }
+                }
+                .attor-work-right {
+                    margin-left: 50px;
+                }
+            }
+        }
+        .attor-prev {
+            ul {
+                li {
+                    a {
+                        padding: 6px 14px;
+                    }
+                }
+            }
+        }
+        .attor-details-right {
+            .attor-details-name {
+                margin-bottom: 30px;
+
+                h2 {
+                    font: {
+                        size: 22px;
+                    }
+                    margin-bottom: 12px;
+                }
+                span {
+                    font-size: 16px;
+                    margin-bottom: 4px;
+                }
+            }
+            .attor-details-things {
+                h3 {
+                    font: {
+                        size: 20px;
+                    }
+                    margin-bottom: 14px;
+                }
+                p {
+                    margin-bottom: 10px;
+                }
+                ul {
+                    li {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    /*-- End Attorneys Details --*/
+
+    /*-- Contact Form --*/
+    .contact-form-two {
+        h2 {
+            font: {
+                size: 22px;
+            }
+            margin-bottom: 30px;
+        }
+        .contact-wrap {
+            padding: 30px 15px;
+        }
+    }
+    /*-- End Contact Form --*/
+    /*----- End Attorneys Details Page -----*/
+
+    /*----- Case Studies Page -----*/
+    /*-- Portfolio --*/
+    .portfolio-area-two {
+        padding-bottom: 100px;
+    }
+    .case-pagination {
+        ul {
+            li {
+                a {
+                    width: 35px;
+                    height: 35px;
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+    /*-- End Portfolio --*/
+    /*----- End Case Studies Page -----*/
+
+    /*----- Case Studies Details Page -----*/
+    /*-- Case Details Img --*/
+    .case-details-item {
+        margin-bottom: 30px;
+
+        img {
+            width: 100%;
+        }
+        h3 {
+            font: {
+                size: 18px;
+            }
+            line-height: 30px;
+        }
+        ul {
+            li {
+                margin-bottom: 8px;
+            }
+        }
+    }
+    /*-- End Case Details Img --*/
+
+    /*-- Case Details Tab --*/
+    .case-details-tab {
+        padding-top: 40px;
+
+        .case-details-tab-item {
+            h2 {
+                font: {
+                    size: 22px;
+                }
+            }
+            .nav-pills {
+                .nav-link {
+                    width: 85px;
+                    font-size: $all-size;
+                    padding: 10px 0;
+                }
+            }
+            .tab-content {
+                h3 {
+                    font: {
+                        size: 18px;
+                    }
+                    margin-bottom: 12px;
+                    line-height: 28px;
+                }
+                p {
+                    margin-bottom: 30px;
+                }
+            }
+            .case-details-tab-img {
+                text-align: center;
+                position: relative;
+                z-index: 1;
+                padding-top: 20px;
+
+                img {
+                    position: relative;
+                    bottom: 10px;
+                }
+                &:before {
+                    position: absolute;
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 0;
+                    top: 0;
+                    z-index: -1;
+                    border: 10px solid #b69d74;
+                    background-color: #373535;
+                }
+            }
+        }
+    }
+    /*-- End Case Details Tab --*/
+
+    /*-- Portfolio --*/
+    .portfolio-area-three {
+        padding-bottom: 70px;
+    }
+    /*-- End Portfolio --*/
+    /*----- End Case Studies Details Page -----*/
+
+    /*----- Blog Details Page -----*/
+    /*-- Blog Details --*/
+    .blog-details-item {
+        .blog-details-img {
+            img {
+                margin-bottom: 30px;
+            }
+            h2 {
+                font: {
+                    size: 18px;
+                }
+                line-height: 28px;
+                padding-right: 0;
+            }
+        }
+        .blog-details-social {
+            padding-top: 12px;
+            margin-bottom: 18px;
+
+            ul {
+                li {
+                    a {
+                        font-size: 18px;
+                        margin-right: 6px;                    
+                    }
+                }
+            }
+        }
+        .blog-details-nav {
+            margin-bottom: 30px;
+
+            a {
+                padding: 6px 16px;
+            }
+        }
+        .blog-details-search {
+            padding: 30px 15px 70px;
+            margin-bottom: 30px;
+
+            .search-area {
+                .form-control {
+                    height: 45px;
+                    padding-left: 20px;
+                    font-size: 14px;
+                }
+                .blog-details-btn {
+                    height: 44px;
+                }
+            }
+            h3 {
+                font: {
+                    size: 18px;
+                }
+            }
+            ul {
+                li {
+                    padding-top: 0;
+                    margin-bottom: 60px;
+
+                    .blog-details-recent {
+                        padding-left: 110px;
+
+                        h4 {
+                            font-size: 13px;
+                            margin-bottom: 8px;
+                        }
+                    }
+                    ul {
+                        li {
+                            font-size: 13px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+        .blog-details-tags {
+            padding: 30px 15px 30px;
+
+            h3 {
+                font: {
+                    size: 18px;
+                }
+            }
+            ul {
+                li {
+                    a {
+                        padding: 8px 15px;
+                    }
+                }
+            }
+        }
+    }
+    .blog-details-category {
+        padding: 30px 15px;
+        margin-bottom: 30px;
+
+        h3 {
+            font: {
+                size: 20px;
+            }
+        }
+        ul {
+            li {
+                &:before {
+                    top: 6px;
+                    height: 30px;
+                }
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .blog-area-three {
+        padding-bottom: 70px;
+
+        .blog-item {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+    /*-- End Blog Details --*/
+    /*----- End Blog Details Page -----*/
+
+    /*----- Practice Page -----*/
+    /*-- Practice --*/
+    .practice-area-two {
+        padding-bottom: 70px;
+    }
+    /*-- End Practice --*/
+    /*----- End Practice Page -----*/
+
+    /*----- Practice Details Page -----*/
+    /*-- Practice --*/
+    .practice-details-area {
+        padding-bottom: 100px;
+    }
+    .practice-details-item {
+        .practice-details-content {
+            margin-bottom: 30px;
+
+            .section-title {
+                margin-bottom: 20px;
+            }
+            p {
+                margin-bottom: 15px;
+            }
+            ul {
+                li {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+        .blog-details-category {
+            margin-bottom: 30px;
+        }
+        .practice-details-contact {
+            margin-bottom: 30px;
+
+            h3 {
+                font: {
+                    size: 20px;
+                }
+            }
+            ul {
+                li {
+                    font-size: 14px;
+                    margin-bottom: 13px;                
+
+                    i {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .practice-details-brochures {
+            h3 {
+                font: {
+                    size: 20px;
+                }
+            }
+            .cmn-btn {
+                i {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    /*-- End Practice --*/
+    /*----- End Practice Details Page -----*/
+
+    /*----- Appointment Page -----*/
+    /*-- Team --*/
+    .team-area-three {
+        padding-bottom: 20px;
+    }
+    .contact-form-three {
+        padding-bottom: 100px;
+    }
+    /*-- End Team --*/
+    /*----- End Appointment Page -----*/
+
+    /*----- Testimonial Page -----*/
+    /*-- Testimonial --*/
+    .testimonial-area {
+        padding-bottom: 100px;
+
+        .testimonial-more {
+            margin-top: 15px;
+        }
+    }
+    .testimonial-item {
+        .testimonial-wrap {
+            p {
+                padding: 25px;
+            }
+            .testimonial-right {
+                h3 {
+                    font: {
+                        size: 20px;
+                    }
+                    margin-bottom: 6px;
+                }
+            }
+        }
+    }
+    /*-- End Testimonial --*/
+    /*----- End Testimonial Page -----*/
+
+    /*----- FAQ Page -----*/
+    /*-- Faq --*/
+    .faq-area {
+        padding-bottom: 70px;
+    }
+    .faq-head {
+        h2 {
+            margin-bottom: 25px;
+            font-size: 20px;
+        }
+    }
+    .faq-wrap {
+        margin-bottom: 30px;
+
+        &:last-child {
+            margin-bottom: 30px;
+        }
+    }
+    .accordion { 
+        p {
+            font-size: $all-size;
+            padding: 20px 15px 15px 15px;
+        }
+        a {
+            font-size: 14px;
+            padding: 12px 20px 12px 12px;
+
+            &:after {
+                top: 8px;
+                font-size: 21px;
+                right: 8px;
+            }
+        }
+    }
+    .accordion {
+        li {
+            a.active:after {
+                font-size: 21px;
+            }
+        }
+    }
+    /*-- End Faq --*/
+    /*----- End Faq Page -----*/
+
+    /*----- Error Page -----*/
+    /*-- 404 --*/
+    .error-item {
+        height: 590px;
+
+        h1 {
+            font-size: 70px;
+        }
+        p {
+            margin-bottom: 2px;
+            font-size: 20px;
+        }
+        a {
+            padding: 14px 30px;
+            margin-top: 35px;
+            font-size: 14px;
+        }
+    }
+    /*-- End 404 --*/
+    /*----- End Error Page -----*/
+
+    /*----- Privacy Policy Page -----*/
+    /*-- Privacy --*/
+    .privacy-area {
+        padding-bottom: 70px;
+    }
+    .privacy-item {
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+    /*-- End Privacy --*/
+    /*----- End Privacy Policy Page -----*/
+
+    /*----- Contact Page -----*/
+    /*-- Contact --*/
+    .page-title-area-two {
+        height: 350px;
+
+        .page-title-text {
+            margin-top: 30px;
+        }
+    }
+    .contact-form-four {
+        .location-item {
+            .location-icon {
+                i {
+                    top: 20px;
+                }
+            }
+            h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            ul {
+                li {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    /*-- End Contact --*/
+
+    /*-- Map --*/
+    #map {
+        height: 430px;
+    }
+    /*-- End Map --*/
+    /*----- End Contact Page -----*/
+
+
+
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    $gold-color: #b69d74;
+    $white-color: #ffffff;
+    $black-color: #333333;
+    $all-size: 14px;
+
+    /*-- Default CSS --*/
+    body {
+        font-size: $all-size;
+    }
+    .ptb-100 {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    .pt-100 {
+        padding-top: 70px;
+    }
+    .pb-70 {
+        padding-bottom: 40px;
+    }
+    .pb-100 {
+        padding-bottom: 70px;
+    }
+    /*-- End Default CSS --*/
+
+    /*----- Home Page 1 -----*/
+    /*-- Navbar --*/
+    .mobile-nav .logo {
+        width: 75px;
+    }
+    .mobile-nav.mean-container .mean-nav ul li a.active {
+        color: $gold-color;
+    }
+    .mobile-nav nav .navbar-nav {
+        height: 350px;
+        overflow-y: scroll;
+    }
+    .side-nav {
+        display: none;
+    }
+    /*-- End Navbar --*/
+
+    /*-- Banner --*/
+    .banner-area {
+        height: 100%;
+        padding-top: 130px;
+        padding-bottom: 200px;
+        text-align: center;
+    }
+    .banner-item {
+        .banner-left {
+            margin-top: 0;
+
+            h1 {
+                margin-bottom: 25px;
+                font: {
+                    size: 30px;
+                }
+            }
+            p {
+                font-size: 14px;
+            }
+            a {
+                padding: 14px 18px;
+            }
+        }
+        .banner-right {
+            img {
+                bottom: -30px;
+            }
+        }
+    }
+    @keyframes banner-animation {
+        50% {
+            transform: translate(0, -30px);
+        }
+    }
+    .banner-bottom {
+        border-top: 15px solid #b69d7459;
+        border-bottom: 15px solid #b69d7459;
+        border-left: 15px solid #b69d7459;
+        border-right: 15px solid #b69d7459;
+        bottom: -55px;
+        left: 20px;
+
+        ul {
+            li {
+                &:last-child {
+                    padding-right: 88px;
+                    padding-top: 26px;
+                }
+            }
+        }
+    }
+    /*-- End Banner --*/
+
+    /*-- Help --*/
+    .help-area {
+        padding-top: 125px;
+    }
+    .help-left {
+        margin-right: auto;
+        padding-top: 45px;
+        padding-bottom: 45px;
+
+        &:before {
+            border: 15px solid $gold-color;
+        }
+    }
+    .help-item {
+        .help-right {
+            max-width: 100%;
+            margin-left: 20px;
+
+            h2 {
+                font: {
+                    size: 25px;
+                }
+                margin-bottom: 15px;
+            }
+            p {
+                margin-bottom: 15px;
+            }
+            .help-inner-left {
+                ul {
+                    li {
+                        font-size: 15px;
+                        margin-bottom: 8px;
+
+                        i {
+                            margin-right: 6px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .help-inner-right {
+                ul {
+                    li {
+                        font-size: 15px;
+                        margin-bottom: 8px;
+
+                        i {
+                            margin-right: 6px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .help-signature {
+                img {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .cmn-btn {
+        font-size: 15px;
+        padding: 12px 25px;
+    }
+    /*-- End Help --*/
+
+    /*-- Practice --*/
+    .section-title {
+        margin-bottom: 40px;
+        margin-top: -5px;
+
+        span {
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+        h2 {
+            font: {
+                size: 25px;
+            }
+        }
+    }
+    .practice-item {
+        padding: 30px 20px;
+
+        .practice-icon {
+            i {
+                margin-bottom: 28px;
+            }
+        }
+        h3 {
+            margin-bottom: 18px;
+            font: {
+                size: 23px;
+            }
+        }
+        a {
+            padding: 12px 24px;
+        }
+    }
+    /*-- End Practice --*/
+
+    /*-- Expertise --*/
+    .expertise-area {
+        padding-top: 70px;
+    }
+    .expertise-item {
+        ul {
+            li {
+                margin-bottom: 40px;
+
+                &:last-child {
+                    margin-bottom: 40px;
+                }
+                .expertise-icon {
+                    i {
+                        font-size: 40px;
+                        left: 25px;
+                    }
+                }
+                h3 {
+                    padding-left: 120px;
+                    font: {
+                        size: 24px;
+                    }
+                    margin-bottom: 14px;
+                }
+                p {
+                    padding-left: 120px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    /*-- End Expertise --*/
+
+    /*-- Portfolio --*/
+    .portfolio-area {
+        .text-center {
+            margin-top: 15px;
+        }
+    }
+    .portfolio-item {
+        .portfolio-inner {
+            span {
+                margin-bottom: 16px;
+            }
+            h3 {
+                a {
+                    font-size: 18px;
+                    margin-bottom: 4px;                
+                }
+            }
+            p {
+                font-size: 13px;
+            }
+        }
+    }
+    /*-- End Portfolio --*/
+
+    /*-- Team --*/
+    .team-area {
+        padding-bottom: 130px;
+    }
+    .team-item {
+        .team-inner {
+            span {
+                font-size: 13px;
+            }
+        }
+    }
+    /*-- End Team --*/
+
+    /*-- Location --*/
+    .loaction-area {
+        top: -70px;
+    }
+    .location-bg {
+        padding-top: 40px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .location-item {
+        padding-left: 90px;
+
+        .location-icon {
+            i {
+                display: inline-block;
+                color: #ffffff;
+                font-size: 26px;
+                position: absolute;
+                left: 32px;
+                top: 22px;
+            }
+        }
+        h3 {
+            font-size: 24px;
+            margin-bottom: 12px;
+        }
+        ul {
+            li {
+                font-size: 14px;
+            }
+        }
+    }
+    /*-- End Location --*/
+
+    /*-- Contact Form --*/
+    .contact-wrap {
+        .form-group {
+            .form-control {
+                height: 50px;
+                padding-left: 20px;
+                font-size: 14px;
+            }
+        }
+    }
+    .contact-btn {
+        font-size: $all-size;
+        padding: 14px 28px;
+    }
+    .list-unstyled {
+        font-size: 14px;
+    }
+    .text-danger {
+        margin-top: 15px;
+        font-size: 22px;
+    }
+    .text-success {
+        margin-top: 15px;
+        font-size: 22px;
+    }
+    /*-- End Contact Form --*/
+
+    /*-- Blog --*/
+    .blog-area {
+        padding-bottom: 135px;
+    }
+    .blog-item {
+        .blog-inner {
+            ul {
+                li {
+                    font-size: 13px;
+
+                    a {
+                        font-size: 13px;
+                    }
+                }
+            }
+            p {
+                margin-bottom: 15px;
+                color: #646464;
+            }
+            .blog-link {
+                font-size: 16px;
+            }
+        }
+    }
+    /*-- End Blog --*/
+    
+    /*-- Newsletter --*/
+    .newsletter-area {
+        top: -70px;
+
+        h2 {
+            font: {
+                size: 26px;
+            }
+            margin-bottom: 24px;
+        }
+        .newsletter-form {
+            .form-control {
+                height: 43px;
+            }
+            .contact-btn {
+                padding: 11px 20px 12px;
+            }
+        }
+    }
+    /*-- End Newsletter --*/
+
+    /*-- Footer --*/
+    footer {
+        .footer-item {
+            .footer-logo {
+                a {
+                    img {
+                        margin-bottom: 25px;
+                    }
+                }
+                p {
+                    margin-bottom: 20px;
+                }
+                ul {
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        margin-right: 14px;
+
+                        a {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .footer-service {
+                h3 {
+                    margin-bottom: 25px;
+                    font-size: 18px;
+                }
+                ul {
+                    li {
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+            .footer-find {
+                h3 {
+                    margin-bottom: 25px;
+                    font-size: 18px;
+                }
+                ul {
+
+                    li {
+                        margin-bottom: 16px;
+
+                        i {
+                            font-size: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .copyright-area {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            margin-top: 40px;
+        }
+    }
+    /*-- End Footer --*/
+    /*----- End Home Page 1 -----*/
+
+    /*----- Back To Top -----*/
+    #toTop {
+        bottom: 50px;
+    }
+    .back-to-top-btn {
+        i {
+            margin-right: 20px;
+        }
+    }
+    /*----- End Back To Top -----*/
+
+    /*----- Home Page 2 -----*/
+    /*-- Banner --*/
+    .banner-area-two {
+        padding-bottom: 125px;
+
+        .banner-item {
+            .banner-right {
+                img {
+                    bottom: -65px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+    /*-- End Banner --*/
+
+    /*-- Counter --*/
+    .counter-area {
+        background-color: #fefaf3;
+    }
+    .counter-bg {
+        top: -70px;
+    }
+    .counter-item {
+        i {
+            font-size: 38px;
+            left: 0;
+        }
+        .counter-inner {
+            padding-left: 50px;
+
+            h3 {
+                font-size: 28px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    /*-- End Counter --*/
+
+    /*-- Help --*/
+    .help-area-two {
+        padding-top: 0;
+        
+        .help-shape {
+            img {
+                right: 0;
+                left: 50px;
+            }
+        }
+        .help-left {
+            &:before {
+                z-index: 1;
+            }
+            img {
+                width: 100%;
+                z-index: 2;
+                position: relative;
+            }
+        }
+        .help-item {
+            .help-right {
+                p {
+                    margin-bottom: 20px;
+                }
+                .help-signature {
+                    img {
+                        margin-top: 25px;
+                        margin-bottom: 25px;
+                    }
+                }
+                h3 {
+                    font-weight: 600;
+                    font-size: $all-size;
+                    color: $black-color;
+                    margin-bottom: 10px;
+                }
+                span {
+                    display: block;
+                    color: $black-color;
+                    font-size: 14px;
+                }
+            }
+        }
+        .help-wrap {
+            .help-item {
+                .help-right {
+                    margin-left: 20px;
+                    margin-right: 0;
+                }
+                .cmn-btn {
+                    margin-top: 25px;
+                }
+            }
+            .help-left {
+                margin-left: auto;
+                margin-right: auto;
+
+                &:before {
+                    right: 0;
+                }
+            }
+        }
+    }
+    /*-- End Help --*/
+
+    /*-- Expertise --*/
+    .expertise-area-two {
+        .expertise-item {
+            ul {
+                li {
+                    .expertise-icon {
+                        top: 12px;
+                    }
+                }
+            }
+        }
+    }
+    /*-- End Expertise --*/
+    /*----- End Home Page 2 -----*/
+
+    /*----- Home Page 3 -----*/
+    /*-- Home Slider --*/
+    .slider-item {
+        height: 100%;
+        padding-top: 130px;
+        padding-bottom: 150px;
+        text-align: center;
+    }
+    .slider-text  {
+        h1 {
+            font: {
+                size: 28px;
+            }
+            &:before {
+                display: none;
+            }
+        }
+        span {
+            font-size: 42px;
+        }
+        p {
+            margin-bottom: 35px;
+            font: {
+                size: 18px;
+            }
+        }
+        a {
+            padding: 13px 20px;
+        }
+    }
+    .slider-shape {
+        .s-s-one {
+            top: 30px;
+        }
+        .s-s-two {
+            top: 30px;
+        }
+        .s-s-three {
+            top: 30px;
+        }
+    }
+    .home-slider {
+        .owl-prev {
+            top: 44%;
+            width: 55px;
+            height: 55px;
+            font-size: 26px !important;
+            line-height: 55px !important;
+        }
+        .owl-next {
+            top: 44%;
+            width: 55px;
+            height: 55px;
+            font-size: 26px !important;
+            line-height: 55px !important;
+        }
+    }
+    .home-slider.owl-theme {
+        .owl-dots {
+            bottom: 120px;
+        }
+    }
+    /*-- End Home Slider --*/
+
+    /*-- Slider Bottom --*/
+    .slider-bottom-area {
+        .slider-bottom-wrap {
+            padding-top: 30px;
+            padding-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+            top: -70px;
+        }
+    }
+    /*-- End Slider Bottom --*/
+
+    /*-- Counter --*/
+    .counter-area-two {
+        background-color: transparent;
+
+        .counter-bg {
+            top: -80px;
+        }
+    }
+    /*-- End Counter --*/
+
+    /*-- Help --*/
+    .help-area-three {
+        padding-top: 0;
+    }
+    /*-- End Help --*/
+    /*----- End Home Page 3 -----*/
+
+    /*----- About Page -----*/
+    /*-- Page Title --*/
+    .page-title-area-three {
+        .page-title-text {
+            margin-top: 50px;
+        }
+    }
+    .page-title-area {
+        height: 370px;
+    }
+    .page-title-text {
+        margin-top: 65px;
+
+        h2 {
+            font: {
+                size: 30px;
+            }
+            margin-bottom: 15px;
+        }
+        ul {
+            li {
+                font-size: 15px;
+            }
+        }
+        .page-title-btn {
+            a {
+                border: 2px solid #b69d74;
+                padding: 11px 22px;
+                font-size: 14px;
+        
+                i {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+    /*-- End Page Title --*/
+
+    /*-- Help --*/
+    .help-area-four {
+        padding-top: 70px;
+    }
+    /*-- End Help --*/
+
+    /*-- About --*/
+    .about-area {
+        padding-bottom: 110px;
+    }
+    .about-item {
+        .about-video-wrap {
+            a {
+                left: 48%;
+            }
+        }
+        .about-content {
+            margin-top: 25px;
+            margin-bottom: 25px;
+
+            h2 {
+                font: {
+                    size: 20px;
+                }
+                margin-bottom: 8px;
+            }
+        }
+        .about-information {
+            h2 {
+                font-size: 17px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    /*-- End About --*/
+    /*----- End About Page -----*/
+
+    /*----- Attorneys Page -----*/
+    /*-- Team --*/
+    .team-area-two {
+        padding-bottom: 110px;
+    }
+    /*-- End Team --*/
+    /*----- End Attorneys Page -----*/
+
+    /*----- Attorneys Details Page -----*/
+    /*-- Attorneys Details --*/
+    .attor-details-item {
+        .attor-details-left {
+            padding: 0 50px 40px 50px;
+            box-shadow: 0px 0px 20px 0px #ddd;
+            margin-bottom: 30px;
+
+            .attor-social {
+                text-align: center;
+                margin-top: -28px;
+
+                ul {
+                    margin: 0;
+                    padding: 0;
+                    background-color: #282828;
+                    display: inline-block;
+                    padding: 12px 30px;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 15px 0px #ddd;
+                    margin-bottom: 25px;
+
+                    li {
+                        list-style-type: none;
+                        display: inline-block;
+                        margin-right: 4px;
+                        margin-left: 4px;
+
+                        a {
+                            display: block;
+                            color: $gold-color;
+                            font-size: 18px;
+
+                            &:hover {
+                                color: $white-color;
+                            }
+                        }
+                    }
+                }
+            }
+            .attor-social-details {
+                h3 {
+                    font: {
+                        size: 20px;
+                    }
+                    margin-bottom: 16px;
+                }
+                ul {
+                    li {
+                        margin-bottom: 10px;
+                        
+                        i {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .attor-work {
+                h3 {
+                    font: {
+                        size: 20px;
+                    }
+                    margin-bottom: 16px;
+                }
+            }
+        }
+        .attor-prev {
+            margin-bottom: 30px;
+
+            ul {
+                li {
+                    a {
+                        padding: 7px 16px;
+                    }
+                }
+            }
+        }
+        .attor-details-right {
+            .attor-details-name {
+                margin-bottom: 30px;
+
+                h2 {
+                    font: {
+                        size: 25px;
+                    }
+                    margin-bottom: 12px;
+                }
+                span {
+                    font-size: 16px;
+                }
+            }
+            .attor-details-things {
+                h3 {
+                    font: {
+                        size: 18px;
+                    }
+                    margin-bottom: 14px;
+                }
+                p {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+    /*-- End Attorneys Details --*/
+
+    /*-- Contact Form --*/
+    .contact-form-two {
+        h2 {
+            font: {
+                size: 24px;
+            }
+            margin-bottom: 30px;
+        }
+        .contact-wrap {
+            padding: 30px 40px;
+        }
+    }
+    /*-- End Contact Form --*/
+    /*----- End Attorneys Details Page -----*/
+
+    /*----- Case Studies Page -----*/
+    /*-- Portfolio --*/
+    .portfolio-area-two {
+        padding-bottom: 140px;
+    }
+    /*-- End Portfolio --*/
+    /*----- End Case Studies Page -----*/
+
+    /*----- Case Studies Details Page -----*/
+    /*-- Case Details Img --*/
+    .case-details-item {
+        h3 {
+            font: {
+                size: 20px;
+            }
+            line-height: 28px;
+        }
+    }
+    /*-- End Case Details Img --*/
+
+    /*-- Case Details Tab --*/
+    .case-details-tab {
+        padding-top: 65px;
+
+        .case-details-tab-item {
+            h2 {
+                font: {
+                    size: 25px;
+                }
+                margin-bottom: 24px;
+            }
+            .nav-pills {
+                margin-bottom: 15px;
+            }
+            .tab-content {
+                h3 {
+                    font: {
+                        size: 20px;
+                    }
+                    line-height: 30px;
+                }
+                p {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+    /*-- End Case Details Tab --*/
+
+    /*-- Portfolio --*/
+    .portfolio-area-three {
+        padding-bottom: 110px;
+    }
+    /*-- End Portfolio --*/
+    /*----- End Case Studies Details Page -----*/
+
+    /*----- Blog Details Page -----*/
+    /*-- Blog Details --*/
+    .blog-details-item {
+        .blog-details-img {
+            padding-bottom: 10px;
+
+            img {
+                margin-bottom: 25px;
+            }
+            h2 {
+                font: {
+                    size: 20px;
+                }
+            }
+        }
+        .blog-details-social {
+            padding-top: 15px;
+            margin-bottom: 15px;
+
+            ul {
+                li {
+                    a {
+                        font-size: 20px;
+                        margin-right: 6px;
+                    }
+                }
+            }
+        }
+        .blog-details-nav {
+            margin-bottom: 30px;
+
+            a {
+                padding: 8px 18px;
+            }
+        }
+        .blog-details-contact {
+            h2 {
+                font: {
+                    size: 20px;
+                }
+                margin-bottom: 25px;
+            }
+        }
+        .blog-details-search {
+            margin-bottom: 40px;
+
+            h3 {
+                font: {
+                    size: 20px;
+                }
+            }
+            ul {
+                li {
+                    margin-bottom: 60px;
+                }
+            }
+        }
+        .blog-details-tags {
+            padding: 50px 55px 45px;
+            box-shadow: 0px 0px 20px 0px #ddd;
+
+            h3 {
+                font: {
+                    size: 20px;
+                }
+            }
+            ul {
+                li {
+                    a {
+                        padding: 8px 20px;
+                    }
+                }
+            }
+        }
+    }
+    .blog-details-category {
+        margin-bottom: 40px;
+
+        h3 {
+            font: {
+                size: 20px;
+            }
+        }
+        ul {
+            li {
+                a {
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .blog-area-three {
+        padding-bottom: 110px;
+    }
+    /*-- End Blog Details --*/
+    /*----- End Blog Details Page -----*/
+
+    /*----- Practice Page -----*/
+    /*-- Practice --*/
+    .practice-area-two {
+        padding-bottom: 110px;
+    }
+    /*-- End Practice --*/
+    /*----- End Practice Page -----*/
+
+    /*----- Practice Details Page -----*/
+    /*-- Practice --*/
+    .practice-details-area {
+        padding-bottom: 140px;
+    }
+    .practice-details-item {
+        .practice-details-content {
+            margin-bottom: 40px;
+
+            .section-title {
+                margin-bottom: 25px;
+            }
+        }
+        .blog-details-category {
+            margin-bottom: 40px;
+        }
+        .practice-details-contact {
+            margin-bottom: 40px;
+
+            h3 {
+                font: {
+                    size: 20px;
+                }
+            }
+        }
+        .practice-details-brochures {
+            h3 {
+                font: {
+                    size: 20px;
+                }
+            }
+            .cmn-btn {
+                i {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    /*-- End Practice --*/
+    /*----- End Practice Details Page -----*/
+
+    /*----- Appointment Page -----*/
+    /*-- Team --*/
+    .team-area-three {
+        padding-bottom: 40px;
+    }
+    .contact-form-three {
+        padding-bottom: 140px;
+    }
+    /*-- End Team --*/
+    /*----- End Appointment Page -----*/
+
+    /*----- Testimonial Page -----*/
+    /*-- Testimonial --*/
+    .testimonial-area {
+        padding-bottom: 140px;
+    }
+    /*-- End Testimonial --*/
+    /*----- End Testimonial Page -----*/
+
+    /*----- FAQ Page -----*/
+    /*-- Faq --*/
+    .faq-area {
+        padding-bottom: 140px;
+    }
+    .faq-head {
+        h2 {
+            margin-bottom: 22px;
+            font-size: 22px;
+        }
+    }
+    .faq-wrap {
+        margin-bottom: 40px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .accordion {
+        p {
+            font-size: $all-size;
+        }
+        a {
+            font-size: 16px;
+            padding-right: 20px;
+        }
+    }
+    /*-- End Faq --*/
+    /*----- End Faq Page -----*/
+
+    /*----- Error Page -----*/
+    /*-- 404 --*/
+    .error-item {
+        height: 710px;
+        margin-top: -35px;
+
+        h1 {
+            font-size: 100px;
+        }
+        p {
+            font-size: 25px;
+        }
+        a {
+            padding: 16px 35px;
+            margin-top: 50px;
+            font-size: 15px;
+        }
+    }
+    /*-- End 404 --*/
+    /*----- End Error Page -----*/
+
+    /*----- Privacy Policy Page -----*/
+    /*-- Privacy --*/
+    .privacy-area {
+        padding-bottom: 100px;
+    }
+    .privacy-item {
+        margin-bottom: 40px;
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;        
+        }
+        ul {
+            li {
+                margin-bottom: 14px;
+            }
+        }
+    }
+    /*-- End Privacy --*/
+    /*----- End Privacy Policy Page -----*/
+
+    /*----- Contact Page -----*/
+    /*-- Contact --*/
+    .page-title-area-two {
+        height: 380px;
+    }
+    .contact-form-four {
+        .location-item {
+            h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            ul {
+                li {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    /*-- End Contact --*/
+
+    /*-- Map --*/
+    #map {
+        height: 500px;
+    }
+    /*-- End Map --*/
+    /*----- End Contact Page -----*/
+
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+    .main-nav nav .navbar-nav .nav-item a {
+        font-size: 14px;
+    }
+    .navbar-brand {
+        width: 100px;
+    }
+    .main-nav nav .navbar-nav .nav-item a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .side-nav a {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+    .help-item .help-right .help-inner-left ul li {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .help-item .help-right .help-inner-right ul li {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .practice-item p {
+        font-size: 15px;
+    }
+    .team-item .team-inner h3 a {
+        font-size: 17px;
+    }
+    footer .footer-item .footer-logo p {
+        font-size: 14px;
+    }
+    footer .footer-item .footer-service ul li a {
+        font-size: 14px;
+    }
+    footer .footer-item .footer-find ul li {
+        font-size: 14px;
+    }
+    .slider-bottom-area .slider-bottom-wrap .banner-bottom ul li:last-child {
+        padding-right: 20px;
+    }
+    .slider-bottom-area .slider-bottom-wrap {
+        padding-top: 40px;
+        padding-bottom: 10px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .help-area-two .help-wrap .help-left:before {
+        display: none;
+    }
+    .slider-shape {
+        .s-s-one {
+            top: 0;
+        }
+        .s-s-two {
+            top: 0;
+        }
+        .s-s-three {
+            top: 0;
+        }
+    }
+
+}
+
+
+@media only screen and (max-width: 991px) {
+    .mean-container a.meanmenu-reveal span {
+        position: relative;
+        top: 10px;
+        margin-top: -10px;
+    }
+    .mean-container .mean-nav ul li a.mean-expand {
+        margin-top: 0;
+    }
+}

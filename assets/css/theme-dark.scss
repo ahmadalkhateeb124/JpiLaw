@@ -1,0 +1,332 @@
+$gold-color: #b69d74;
+$white-color: #ffffff;
+$dark-color: #1d1d1d;
+$bg-color: #252525;
+$card-bg: #0e0e0e;
+
+.switch-box {
+    position: fixed;
+    bottom: 15px;
+    right: 120px;
+    z-index: 9999;
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+        border: 1.5px solid $white-color;
+        transition: 0.4s;
+        &::before {
+            position: absolute;
+            content: "";
+            height: 25px;
+            width: 25px;
+            left: 0px;
+            bottom: 4px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            transition: 0.4s;
+            box-shadow: 0 0px 15px #2020203d;
+            background: white url('../img/night.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        &.round {
+            border-radius: 34px;
+            &::before {
+                border-radius: 50%;
+            }
+        }
+    }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 50px;
+        height: 30px;
+        input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+    }
+    input:checked + .slider {
+        background-color: transparent;
+        border: 1.5px solid $gold-color;
+    }
+      
+    input:focus + .slider {
+        box-shadow: 0 0 1px $gold-color;
+    }
+      
+    input:checked + .slider:before {
+        transform: translateX(24px);
+        background: white url('../img/sunny.png');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.theme-dark {
+    $black-colo: #ffffff;
+    h1, h2, h3, h4, h5, h6 {
+        color: $white-color; 
+    }
+    h3 {
+        color: $white-color; 
+        a {
+            color: $white-color !important;
+            transition: 0.7s;
+            &:hover {
+                color: $gold-color !important;
+            }
+        }
+    }
+    .blog-link {
+        &:hover {
+            color: $white-color !important;
+        }
+    }
+    p {
+        color: $white-color !important; 
+    }
+    body {
+        background: $dark-color;
+        color: $white-color; 
+    }
+    .help-item {
+        .help-right {
+            p {
+                color: $white-color;
+            }
+            h3 {
+                color: $white-color;
+            }
+            span {
+                color: $white-color;
+            }
+            .help-inner-left, .help-inner-right {
+                ul {
+                    li {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+    .practice-area {
+        background-color: $bg-color;
+    }
+    .attor-details-item {
+        .attor-details-right {
+            .attor-details-things {
+                ul {
+                    li {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+        .attor-details-left {
+            .attor-social-details {
+                ul {
+                    li {
+                        color: $white-color;
+                        a {
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+            .attor-work {
+                ul {
+                    li {
+                        color: $white-color;
+                       
+                    }
+                }
+            }
+        }
+        .attor-prev {
+            ul {
+                li {
+                    a {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+    .accordion {
+        a {
+            color: #FFFFFF !important;
+            border: 1px solid rgb(191 191 191 / 41%);
+            &::after {
+                color: #FFFFFF !important;
+            }
+        }
+    }
+    .team-item {
+        .team-inner {
+            background-color: $card-bg;
+            ul {
+                box-shadow: 0px 8px 13px 0px #393838;
+            }
+            h3 {
+                a {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    .counter-bg {
+        background-color: $bg-color;
+    }
+    .counter-item {
+        .counter-inner {
+            p {
+                color: $white-color;
+            }
+        }
+    }
+    .counter-area, .help-area-two {
+        background-color: $bg-color;
+    }
+    // .contact-form {
+    //     position: relative;
+    //     z-index: 1;
+    //     &::before {
+    //         content: '';
+    //         position: absolute;
+    //         z-index: -1;
+    //         top: 0;
+    //         left: 0;
+    //         right: 0;
+    //         width: 100%;
+    //         height: 100%;
+    //         background-color: $card-bg;
+    //         opacity: 0.6;
+    //     }
+    // }
+    .location-bg {
+        &::after {
+            background-color: $bg-color;
+        }
+        &::before {
+            background-color: $card-bg;
+        }
+    }
+    .location-item {
+        .location-link {
+            color: $white-color;
+            &:hover {
+                color: $gold-color;
+            }
+        }
+    }
+    .case-details-item {
+        ul {
+            li {
+                color: $white-color;
+            }
+        }
+    }
+    .blog-details-category {
+        ul {
+            li {
+                a {
+                    color: $white-color;
+                }
+            }
+        }
+    }
+    .blog-details-item {
+        .blog-details-img {
+            p {
+                color: $white-color;
+            }
+        }
+        .blog-details-social {
+            ul {
+                li {
+                    span {
+                        color: $white-color;
+                        a {
+                            color: $white-color;
+                            &:hover {
+                                color: $gold-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .blog-details-nav {
+            a {
+                color: $white-color;
+            }
+        }
+        .blog-details-search {
+            h3 {
+                color: $white-color;
+            }
+            .search-area {
+                .form-control {
+                    background-color: $bg-color;
+                    color: $white-color;
+                }
+            }
+            ul {
+                li {
+                    .blog-details-recent {
+                        h4 {
+                            a {
+                                color: $white-color;
+                                &:hover {
+                                    color: $gold-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .blog-details-tags {
+            h3 {
+                color: $white-color;
+            }
+            ul {
+                li {
+                    a {
+                        color: $white-color;
+                        background-color: $bg-color;
+                        transition: 0.7s;
+                        &:hover {
+                            background-color: $gold-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        &::before {
+            background-color: $card-bg;
+        }
+    }
+    .contact-wrap {
+        .form-group {
+            label {
+                color: $white-color;
+                a {
+                    &:hover {
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+    }
+}
