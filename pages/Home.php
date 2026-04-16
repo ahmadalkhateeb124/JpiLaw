@@ -14,7 +14,7 @@
                                     <strong>المحامين ذوي الخبرة</strong> يضمن لك التمثيل القانوني الأمثل وفق أعلى معايير الجودة والسرية التامة.
                                     اتصل بنا الآن للحصول على <strong>استشارة قانونية موثوقة ومهنية</strong>.
                                 </p>
-                                <a href="">احصل على <strong>استشارتك القانونية</strong> الآن <i class="icofont-arrow-left"></i></a>
+                                <a href="contact">احصل على <strong>استشارتك القانونية</strong> الآن <i class="icofont-arrow-left"></i></a>
                             </div>
                         </div>
                     </div>
