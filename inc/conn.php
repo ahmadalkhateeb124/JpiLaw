@@ -3,10 +3,12 @@ date_default_timezone_set('Asia/Amman');
 session_start();
 
 $url = $_SERVER['HTTP_HOST'];
-if ($url == 'localhost') {
-    // $conn = mysqli_connect("localhost", "root", "", "kayan_tech_db");
-    $base_url = "http://localhost/";
-    $base_path = $_SERVER['DOCUMENT_ROOT'] . '/';
+$protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+
+if (strpos($url, 'localhost') !== false || strpos($url, '127.0.0.1') !== false) {
+    // Local development path
+    $base_url = $protocol . '://' . $url . '/JpiLaw/';
+    $base_path = $_SERVER['DOCUMENT_ROOT'] . '/JpiLaw/';
 } else {
 
     // $conn = mysqli_connect("localhost", "u366180362_k14ncom", "KayanTechCo@2002#", "u366180362_KayanTechCo");
@@ -52,4 +54,3 @@ $currentURL = getCurrentURL();
 // include_once($base_path . 'inc/UpdateVisitCount.php');
 // include_once($base_path . 'inc/UpdateVisitCount.php');
 // include_once($base_path . 'inc/get_info.php');
-

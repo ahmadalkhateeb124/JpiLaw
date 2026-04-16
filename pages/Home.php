@@ -7,7 +7,7 @@
                     <div class="col-lg-6">
                         <div class="banner-item">
                             <div class="banner-left">
-                                <h1><strong>   مكتب جي بي آي للمحاماة ||  والاستشارات القانونية</strong></h1>
+                                <h1><strong> مكتب جي بي آي للمحاماة || والاستشارات القانونية</strong></h1>
                                 <p>
                                     نقدم في <strong>مكتب "جي بي آي"</strong> <strong>خدمات قانونية متكاملة</strong> ومتخصصة في جميع فروع القانون مثل
                                     <strong>القانون المدني</strong>، <strong>التجاري</strong>، <strong>الجنائي</strong>، وقانون العمل. فريقنا من
