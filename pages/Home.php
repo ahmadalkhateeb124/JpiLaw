@@ -373,6 +373,11 @@
                         <a class="location-link" href="https://www.google.com/maps/search/?api=1&query=Al-Bakri+Building,+Ramallah" target="_blank">Palestine - Ramallah - Al-Manara Square </a>
                     </div>
                 </div>
+                <?php
+                    $_hEmail  = site_setting('contact_email',    'info@jpilawfirm.com');
+                    $_hPhone1 = site_setting('contact_phone',    '+962 79 628 6204');
+                    $_hPhone2 = site_setting('contact_whatsapp', '+962 79 687 2442');
+                ?>
                 <div class="col-sm-6 col-lg-3">
                     <div class="location-item">
                         <div class="location-icon">
@@ -382,9 +387,8 @@
                         <h3>Email</h3>
                         <ul>
                             <li>
-                                <a href="mailto:info@jpilawfirm.com">info@jpilawfirm.com</a>
+                                <a href="mailto:<?= htmlspecialchars($_hEmail) ?>"><?= htmlspecialchars($_hEmail) ?></a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
@@ -397,11 +401,10 @@
                         <h3>Phone</h3>
                         <ul>
                             <li>
-                                <a href="tel:+962796286204">00(962) 796286204
-                                </a>
+                                <a href="<?= htmlspecialchars(tel_link($_hPhone1)) ?>"><?= htmlspecialchars($_hPhone1) ?></a>
                             </li>
                             <li>
-                                <a href="tel:+962796872442">00(962) 796872442</a>
+                                <a href="<?= htmlspecialchars(tel_link($_hPhone2)) ?>"><?= htmlspecialchars($_hPhone2) ?></a>
                             </li>
                         </ul>
                     </div>

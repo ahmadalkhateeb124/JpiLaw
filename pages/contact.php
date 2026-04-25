@@ -3,10 +3,10 @@
     <div class="d-table">
         <div class="d-table-cell">
             <div class="page-title-text">
-                <h2>تواصل معنا</h2>
+                <h1 class="text-light" >تواصل مع مكتب JPI للمحاماة في الأردن وفلسطين</h1>
                 <ul>
                     <li>
-                        <a href="Home">الصفحة الرئيسية</a>
+                        <a href="<?= htmlspecialchars($base_url) ?>">الصفحة الرئيسية</a>
                     </li>
                     <li>
                         <i class="icofont-simple-left"></i>
@@ -19,6 +19,14 @@
 </div>
 <!-- نهاية العنوان -->
 
+<?php
+    $_cAddrJo  = site_setting('address',           'شارع المدينة المنورة، عمّان، الأردن');
+    $_cAddrPs  = site_setting('address_palestine', 'فلسطين - رام الله - ميدان المنارة');
+    $_cPhone1  = site_setting('contact_phone',     '+962 79 628 6204');
+    $_cPhone2  = site_setting('contact_whatsapp',  '+962 79 687 2442');
+    $_cEmail   = site_setting('contact_email',     'info@jpilawfirm.com');
+?>
+
 <!-- نموذج التواصل -->
 <div class="contact-form contact-form-four pb-100">
     <!-- الموقع -->
@@ -30,9 +38,9 @@
                         <div class="location-icon">
                             <i class="flaticon-pin"></i>
                         </div>
-                        <h3>العنوان</h3>
+                        <h3>فلسطين</h3>
                         <ul>
-                            <li>فلسطين - رام الله - ميدان المنارة</li>
+                            <li><?= htmlspecialchars($_cAddrPs) ?></li>
                         </ul>
                     </div>
                 </div>
@@ -41,9 +49,9 @@
                         <div class="location-icon">
                             <i class="flaticon-pin"></i>
                         </div>
-                        <h3>العنوان</h3>
+                        <h3>الأردن</h3>
                         <ul>
-                            <li> شارع المدينة المنورة، عمّان، الأردن</li>
+                            <li><?= htmlspecialchars($_cAddrJo) ?></li>
                         </ul>
                     </div>
                 </div>
@@ -56,9 +64,8 @@
                         <h3>البريد الإلكتروني</h3>
                         <ul>
                             <li>
-                                <a href="mailto:info@jpilawfirm.com">info@jpilawfirm.com</a>
+                                <a href="mailto:<?= htmlspecialchars($_cEmail) ?>"><?= htmlspecialchars($_cEmail) ?></a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
@@ -70,11 +77,10 @@
                         <h3>الهاتف</h3>
                         <ul dir="ltr">
                             <li>
-                                <a href="tel:+962796286204">00(962) 796286204
-                                </a>
+                                <a href="<?= htmlspecialchars(tel_link($_cPhone1)) ?>"><?= htmlspecialchars($_cPhone1) ?></a>
                             </li>
                             <li>
-                                <a href="tel:+962796872442">00(962) 796872442</a>
+                                <a href="<?= htmlspecialchars(tel_link($_cPhone2)) ?>"><?= htmlspecialchars($_cPhone2) ?></a>
                             </li>
                         </ul>
                     </div>

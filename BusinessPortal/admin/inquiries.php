@@ -70,9 +70,6 @@ if ($action === 'view' && $id) {
           <input type="hidden" name="id" value="<?= (int) $inq['id'] ?>">
           <button class="btn btn-danger"><i class="fa-solid fa-trash"></i> <?= e(__('delete')) ?></button>
         </form>
-        <a href="mailto:<?= e($inq['Email']) ?>?subject=Re: <?= e($inq['Subject']) ?>" class="btn btn-gold" style="margin-inline-start: auto;">
-          <i class="fa-solid fa-reply"></i> الرد عبر البريد
-        </a>
       </div>
     </div>
 

@@ -21,13 +21,27 @@ function eAttr(?string $value): string
 
 function redirect(string $url): void
 {
+    // Strip .php from redirect targets so the browser's URL stays clean.
+    $url = preg_replace('/\.php(\?|#|$)/', '$1', $url);
     header("Location: $url");
     exit;
 }
 
 function bp_url(string $path = ''): string
 {
-    return BP_URL . ltrim($path, '/');
+    $path = ltrim($path, '/');
+    // Strip .php extension for clean URLs (works with .htaccess rewrite).
+    $path = preg_replace('/\.php(\?|$)/', '$1', $path);
+    return BP_URL . $path;
+}
+
+/**
+ * Current URL without query string — used for self-referencing links.
+ * Always returns the clean (extensionless) URL the user typed.
+ */
+function current_url(): string
+{
+    return strtok($_SERVER['REQUEST_URI'] ?? '', '?');
 }
 
 function site_url(string $path = ''): string

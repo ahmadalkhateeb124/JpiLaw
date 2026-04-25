@@ -6,8 +6,6 @@ if (isLoggedIn()) {
     redirect(BP_URL . 'admin/');
 }
 
-$error = '';
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     csrf_check();
 
@@ -15,17 +13,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = (string) ($_POST['password'] ?? '');
 
     if ($email === '' || $password === '') {
-        $error = __('login_failed');
-    } else {
-        $admin = authenticate($pdo, $email, $password);
-        if ($admin) {
-            loginAdmin($admin);
-            log_activity($pdo, 'login', 'admin', (int) $admin['id'], 'Admin signed in');
-            redirect(BP_URL . 'admin/');
-        }
-        $error = __('login_failed');
+        flash('login_error', __('login_failed'));
+        flash('login_email', $email);
+        redirect(BP_URL . 'auth/login.php');
     }
+
+    $admin = authenticate($pdo, $email, $password);
+    if ($admin) {
+        loginAdmin($admin);
+        log_activity($pdo, 'login', 'admin', (int) $admin['id'], 'Admin signed in');
+        redirect(BP_URL . 'admin/');
+    }
+
+    flash('login_error', __('login_failed'));
+    flash('login_email', $email);
+    redirect(BP_URL . 'auth/login.php');
 }
+
+$error = flash('login_error') ?? '';
+$old_email = flash('login_email') ?? '';
 ?>
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
@@ -65,7 +71,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       </ul>
     </div>
 
-    <div class="footnote">© <?= date('Y') ?> JPI Law Firm — v<?= e(APP_VERSION) ?></div>
+    <div class="footnote">
+      <span>© <?= date('Y') ?> JPI Law Firm</span>
+      <span class="sep">·</span>
+      <span class="ver">v<?= e(APP_VERSION) ?></span>
+      <span class="sep">·</span>
+      <span class="dev-credit">تطوير <a href="https://webkoit.com" target="_blank" rel="noopener">Webkoit</a></span>
+    </div>
   </aside>
 
   <section class="login-form-side">
@@ -96,16 +108,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           <label class="form-label" for="email"><?= e(__('email')) ?></label>
           <input
             id="email" name="email" type="email" required autofocus
-            value="<?= e($_POST['email'] ?? '') ?>"
+            value="<?= e($old_email) ?>"
             placeholder="you@example.com"
             class="form-control" dir="ltr">
         </div>
 
         <div class="form-row">
-          <div class="field-row-between">
-            <label class="form-label" for="password"><?= e(__('password')) ?></label>
-            <a href="#"><?= e(__('forgot_password')) ?></a>
-          </div>
+          <label class="form-label" for="password"><?= e(__('password')) ?></label>
           <div class="password-wrap">
             <input id="password" name="password" type="password" required class="form-control" placeholder="••••••••" dir="ltr">
             <button type="button" class="toggle" aria-label="إظهار كلمة المرور" onclick="togglePw()"><i class="fa-regular fa-eye" id="pw-icon"></i></button>

@@ -49,17 +49,43 @@
                         </div>
                     </div>
 
+                    <?php
+                        $_fAddrJo  = site_setting('address',           'الأردن - عمّان - شارع المدينة المنورة');
+                        $_fAddrPs  = site_setting('address_palestine', 'فلسطين - رام الله - ميدان المنارة');
+                        $_fPhone1  = site_setting('contact_phone',     '+962 79 628 6204');
+                        $_fPhone2  = site_setting('contact_whatsapp',  '+962 79 687 2442');
+                        $_fEmail   = site_setting('contact_email',     'info@jpilawfirm.com');
+                        $_socials  = [
+                            'facebook'  => site_setting('social_facebook'),
+                            'twitter'   => site_setting('social_twitter'),
+                            'instagram' => site_setting('social_instagram'),
+                            'linkedin'  => site_setting('social_linkedin'),
+                            'youtube'   => site_setting('social_youtube'),
+                        ];
+                    ?>
                     <div class="col-sm-6 col-lg-3 mt-5">
                         <div class="footer-item">
                             <div class="footer-find">
                                 <h3>تواصل معنا</h3>
                                 <ul>
-                                    <li><i class="icofont-location-pin"></i> فلسطين - رام الله - ميدان المنارة</li>
-                                    <li><i class="icofont-location-pin"></i> الأردن - عمّان - شارع المدينة المنورة</li>
-                                    <li dir="ltr"><i class="icofont-ui-call"></i> <a href="tel:+962796286204">00(962) 796286204</a></li>
-                                    <li dir="ltr"><i class="icofont-ui-call"></i> <a href="tel:+962796872442">00(962) 796872442</a></li>
-                                    <li><i class="icofont-at"></i> <a href="mailto:info@jpilawfirm.com">info@jpilawfirm.com</a></li>
+                                    <li><i class="icofont-location-pin"></i> <?= htmlspecialchars($_fAddrPs) ?></li>
+                                    <li><i class="icofont-location-pin"></i> <?= htmlspecialchars($_fAddrJo) ?></li>
+                                    <li dir="ltr"><i class="icofont-ui-call"></i> <a href="<?= htmlspecialchars(tel_link($_fPhone1)) ?>"><?= htmlspecialchars($_fPhone1) ?></a></li>
+                                    <li dir="ltr"><i class="icofont-ui-call"></i> <a href="<?= htmlspecialchars(tel_link($_fPhone2)) ?>"><?= htmlspecialchars($_fPhone2) ?></a></li>
+                                    <li><i class="icofont-at"></i> <a href="mailto:<?= htmlspecialchars($_fEmail) ?>"><?= htmlspecialchars($_fEmail) ?></a></li>
                                 </ul>
+                                <?php if (array_filter($_socials)): ?>
+                                    <ul style="display: flex; gap: 8px; margin-top: 14px; padding: 0; list-style: none;">
+                                        <?php foreach ($_socials as $name => $url): if (!$url) continue; ?>
+                                            <li>
+                                                <a href="<?= htmlspecialchars($url) ?>" target="_blank" rel="noopener" aria-label="<?= htmlspecialchars($name) ?>"
+                                                   style="width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,0.08); color: #fff; display: flex; align-items: center; justify-content: center; transition: background .2s;">
+                                                    <i class="fa-brands fa-<?= $name === 'twitter' ? 'x-twitter' : htmlspecialchars($name) ?>"></i>
+                                                </a>
+                                            </li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>

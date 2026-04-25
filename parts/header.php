@@ -351,11 +351,14 @@ $current_page = basename($_SERVER['REQUEST_URI'], ".php");  // هذا يقوم �
                             <li class="nav-item">
                                 <a href="<?= $base_url ?>contact" class="nav-link <?= $current_page == 'contact' ? 'active' : '' ?>">التواصل</a>
                             </li>
+                            <li class="nav-item">
+                                <a href="<?= $base_url ?>BusinessPortal/auth/login.php" class="nav-link">تسجيل دخول</a>
+                            </li>
                         </ul>
 
 
                         <div class="side-nav">
-                            <a href="<?= $base_url ?>contact">احجز موعدًا</a>
+                            <a href="<?= $base_url ?>appointment">احجز موعدًا</a>
                         </div>
 
                     </div>
@@ -416,10 +419,13 @@ $current_page = basename($_SERVER['REQUEST_URI'], ".php");  // هذا يقوم �
                         <li class="nav-item">
                             <a href="<?= $base_url ?>contact" class="nav-link <?= $current_page == 'contact' ? 'active' : '' ?>">التواصل</a>
                         </li>
+                          <li class="nav-item">
+                            <a href="<?= $base_url ?>BusinessPortal/auth/login.php" class="nav-link">تسجيل دخول</a>
+                        </li>
                     </ul>
 
                     <div class="side-nav">
-                        <a href="<?= $base_url ?>contact">احجز موعدًا</a>
+                        <a href="<?= $base_url ?>appointment">احجز موعدًا</a>
                     </div>
 
                 </div>

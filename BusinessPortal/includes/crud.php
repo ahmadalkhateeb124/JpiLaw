@@ -18,6 +18,12 @@ declare(strict_types=1);
 
 function crud_run(PDO $pdo, array $cfg): void
 {
+    // header.php reads these from the local scope of whoever includes it.
+    // We MUST define them inside this function so they reach header.php
+    // when require'd below — otherwise the active nav highlight is lost.
+    $pageTitle = $cfg['page_title'] ?? '';
+    $current   = $cfg['current']    ?? '';
+
     $table        = $cfg['table'];
     $fields       = $cfg['fields'];
     $listColumns  = $cfg['list_columns'] ?? [];
@@ -37,7 +43,7 @@ function crud_run(PDO $pdo, array $cfg): void
         $pdo->prepare("DELETE FROM `$table` WHERE id = ?")->execute([$delId]);
         log_activity($pdo, 'delete', $table, $delId);
         flash('success', __('deleted_successfully'));
-        redirect($_SERVER['SCRIPT_NAME']);
+        redirect(current_url());
     }
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && ($_POST['_op'] ?? '') === 'save') {
@@ -106,7 +112,7 @@ function crud_run(PDO $pdo, array $cfg): void
         }
 
         flash('success', __('saved_successfully'));
-        redirect($_SERVER['SCRIPT_NAME']);
+        redirect(current_url());
     }
 
     // ── Decide which view to render ──────────────────────────────────────────
@@ -240,13 +246,13 @@ function crud_render_form(array $cfg, string $action, array $row): void
         <div class="breadcrumb">
           <a href="<?= e(bp_url('admin/')) ?>"><i class="fa-solid fa-house"></i> <?= e(__('dashboard')) ?></a>
           <span class="sep">/</span>
-          <a href="<?= e($_SERVER['SCRIPT_NAME']) ?>"><?= e($pageTitle) ?></a>
+          <a href="<?= e(current_url()) ?>"><?= e($pageTitle) ?></a>
           <span class="sep">/</span>
           <span><?= e($isEdit ? __('edit') : __('add_new')) ?></span>
         </div>
         <h1 class="page-title"><?= e($isEdit ? __('edit') : __('add_new')) ?> — <?= e($pageTitle) ?></h1>
       </div>
-      <a href="<?= e($_SERVER['SCRIPT_NAME']) ?>" class="btn btn-outline">
+      <a href="<?= e(current_url()) ?>" class="btn btn-outline">
         <i class="fa-solid fa-arrow-right"></i> <?= e(__('back')) ?>
       </a>
     </div>
@@ -359,7 +365,7 @@ function crud_render_form(array $cfg, string $action, array $row): void
         </div>
 
         <div class="form-page-actions">
-          <a href="<?= e($_SERVER['SCRIPT_NAME']) ?>" class="btn btn-outline"><?= e(__('cancel')) ?></a>
+          <a href="<?= e(current_url()) ?>" class="btn btn-outline"><?= e(__('cancel')) ?></a>
           <button type="submit" class="btn btn-gold"><i class="fa-solid fa-floppy-disk"></i> <?= e(__('save')) ?></button>
         </div>
       </div>

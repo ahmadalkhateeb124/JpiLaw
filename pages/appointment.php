@@ -62,9 +62,10 @@
 @media(max-width:720px){.jpi-booking .form-grid{grid-template-columns:1fr}}
 .jpi-booking label { display: block; font-size: 13px; font-weight: 700; color: #1a1a1a; margin-bottom: 7px; }
 .jpi-booking label .req { color: #b03a2e; }
-.jpi-booking input, .jpi-booking textarea, .jpi-booking select { width: 100%; padding: 13px 16px; border: 1.5px solid #e8e8e8; border-radius: 10px; background: #fcfaf6; font-family: 'Tajawal', sans-serif; font-size: 14.5px; color: #1a1a1a; transition: all .2s; line-height: 1.4; }
-.jpi-booking input:focus, .jpi-booking textarea:focus, .jpi-booking select:focus { outline: 0; background: #fff; border-color: #ebcfa7; box-shadow: 0 0 0 4px rgba(235,207,167,0.4); }
+.jpi-booking input, .jpi-booking textarea, .jpi-booking select { width: 100%; padding: 13px 16px; border: 1.5px solid #d4d4d8; border-radius: 10px; background: #ffffff; font-family: 'Tajawal', sans-serif; font-size: 14.5px; color: #1a1a1a; transition: all .2s; line-height: 1.4; }
+.jpi-booking input:focus, .jpi-booking textarea:focus, .jpi-booking select:focus { outline: 0; background: #fff; border-color: #66573e; box-shadow: 0 0 0 3px rgba(102,87,62,0.15); }
 .jpi-booking textarea { min-height: 120px; resize: vertical; }
+.jpi-booking input::placeholder, .jpi-booking textarea::placeholder { color: #71717a; opacity: 1; font-weight: 400; }
 
 /* Custom select — match other inputs exactly + custom arrow */
 .jpi-booking select {
@@ -107,15 +108,15 @@
                 <div class="form-grid">
                     <div>
                         <label>الاسم الكامل <span class="req">*</span></label>
-                        <input type="text" name="name" required dir="rtl" placeholder="مثال: أحمد محمد">
+                        <input type="text" name="name" required dir="rtl" placeholder="أدخل اسمك الكامل">
                     </div>
                     <div>
                         <label>البريد الإلكتروني <span class="req">*</span></label>
-                        <input type="email" name="email" required dir="ltr" placeholder="you@example.com">
+                        <input type="email" name="email" required dir="ltr" placeholder="example@gmail.com">
                     </div>
                     <div>
                         <label>رقم الهاتف <span class="req">*</span></label>
-                        <input type="tel" name="phone" required dir="ltr" placeholder="+962 79 000 0000">
+                        <input type="tel" name="phone" required dir="ltr" placeholder="07X XXX XXXX">
                     </div>
                     <div>
                         <label>نوع القضيّة</label>

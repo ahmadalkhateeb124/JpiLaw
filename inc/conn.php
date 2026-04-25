@@ -48,6 +48,43 @@ try {
     $pdo = null;
 }
 
+/**
+ * Read a value from `site_settings` (cached for the request).
+ * The admin panel ⇒ Site Settings page writes to this table.
+ *
+ *   site_setting('contact_phone')        → "+962 6 462 0000"
+ *   site_setting('social_facebook', '#') → URL or fallback "#"
+ */
+function site_setting(string $key, string $default = ''): string
+{
+    static $cache = null;
+    if ($cache === null) {
+        global $pdo;
+        $cache = [];
+        if (isset($pdo) && $pdo instanceof PDO) {
+            try {
+                $rows = $pdo->query('SELECT `key`, value_ar FROM site_settings')->fetchAll(PDO::FETCH_KEY_PAIR);
+                $cache = $rows ?: [];
+            } catch (Throwable $e) { /* fall through with empty cache */ }
+        }
+    }
+    $val = $cache[$key] ?? '';
+    return $val !== '' ? (string) $val : $default;
+}
+
+/** Helper: clean phone number for tel: links (digits only, with optional leading +). */
+function tel_link(string $phone): string
+{
+    $digits = preg_replace('/[^\d+]/', '', $phone);
+    return 'tel:' . $digits;
+}
+
+/** Helper: clean phone number for wa.me links (digits only, no plus). */
+function wa_link(string $phone): string
+{
+    return 'https://wa.me/' . preg_replace('/\D/', '', $phone);
+}
+
 function getCurrentURL()
 {
     $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
