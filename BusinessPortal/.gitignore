@@ -1,0 +1,5 @@
+config/database.credentials.php
+config/mail.credentials.php
+uploads/*
+!uploads/.gitkeep
+.DS_Store

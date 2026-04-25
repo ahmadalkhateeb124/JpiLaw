@@ -85,7 +85,16 @@
     <!-- نهاية الموقع -->
 
     <div class="container-fluid">
-        <form id="contactForm">
+        <?php if (isset($_GET['sent']) && $_GET['sent'] == '1'): ?>
+            <div style="max-width: 800px; margin: 20px auto; padding: 16px 22px; background: #e8f4ee; color: #2e7d4f; border-radius: 10px; text-align: center; font-weight: bold;">
+                ✓ تم استلام رسالتك بنجاح. سنتواصل معك قريباً.
+            </div>
+        <?php elseif (isset($_GET['error'])): ?>
+            <div style="max-width: 800px; margin: 20px auto; padding: 16px 22px; background: #f8e7e4; color: #b03a2e; border-radius: 10px; text-align: center; font-weight: bold;">
+                ⚠ حدث خطأ — الرجاء التأكّد من البيانات والمحاولة مرّة أخرى.
+            </div>
+        <?php endif; ?>
+        <form id="contactForm" method="post" action="<?= $base_url ?>inc/send_inquiries.php">
             <div class="row contact-wrap">
                 <div class="col-sm-6 col-lg-6">
                     <div class="form-group">

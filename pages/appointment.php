@@ -51,78 +51,107 @@
 </div>
 <!-- End Page Title -->
 
-<!-- Team -->
-<section class="team-area">
+
+<!-- Booking Form -->
+<style>
+.jpi-booking { background: #faf9f7; padding: 70px 0; }
+.jpi-booking .booking-card { max-width: 900px; margin: 0 auto; background: #fff; border: 1px solid #e8e8e8; border-radius: 14px; padding: 40px; box-shadow: 0 4px 20px rgba(0,0,0,.04); }
+.jpi-booking h2 { text-align: center; font-size: 32px; color: #1a1a1a; margin-bottom: 8px; font-weight: 700; }
+.jpi-booking .lead { text-align: center; color: #6c707a; margin-bottom: 32px; font-size: 15px; }
+.jpi-booking .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+@media(max-width:720px){.jpi-booking .form-grid{grid-template-columns:1fr}}
+.jpi-booking label { display: block; font-size: 13px; font-weight: 700; color: #1a1a1a; margin-bottom: 7px; }
+.jpi-booking label .req { color: #b03a2e; }
+.jpi-booking input, .jpi-booking textarea, .jpi-booking select { width: 100%; padding: 13px 16px; border: 1.5px solid #e8e8e8; border-radius: 10px; background: #fcfaf6; font-family: 'Tajawal', sans-serif; font-size: 14.5px; color: #1a1a1a; transition: all .2s; line-height: 1.4; }
+.jpi-booking input:focus, .jpi-booking textarea:focus, .jpi-booking select:focus { outline: 0; background: #fff; border-color: #ebcfa7; box-shadow: 0 0 0 4px rgba(235,207,167,0.4); }
+.jpi-booking textarea { min-height: 120px; resize: vertical; }
+
+/* Custom select — match other inputs exactly + custom arrow */
+.jpi-booking select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  /* Arrow on the LEFT in RTL */
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%231a1a1a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left 16px center;
+  padding-left: 42px;       /* room for arrow */
+  padding-right: 16px;
+}
+[dir="rtl"] .jpi-booking select { background-position: left 16px center; padding-left: 42px; padding-right: 16px; }
+.jpi-booking select:focus { background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239f8054' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E"); }
+.jpi-booking select option { background: #fff; color: #1a1a1a; padding: 8px; font-size: 14.5px; }
+.jpi-booking input[type="date"], .jpi-booking input[type="time"] { font-family: 'Tajawal', sans-serif; }
+.jpi-booking .row-full { grid-column: 1/-1; }
+.jpi-booking .submit-btn { width: 100%; padding: 16px; background: #1a1a1a; color: #ebcfa7; border: 0; border-radius: 10px; font-family: 'Tajawal', sans-serif; font-size: 15px; font-weight: 700; cursor: pointer; margin-top: 20px; transition: all .2s; }
+.jpi-booking .submit-btn:hover { background: #000; color: #fff; transform: translateY(-2px); box-shadow: 0 8px 18px rgba(0,0,0,.15); }
+.jpi-alert-success, .jpi-alert-error { max-width: 900px; margin: 0 auto 24px; padding: 16px 22px; border-radius: 10px; text-align: center; font-weight: 700; }
+.jpi-alert-success { background: #e8f4ee; color: #2e7d4f; }
+.jpi-alert-error { background: #f8e7e4; color: #b03a2e; }
+</style>
+
+<section class="jpi-booking">
     <div class="container">
+        <?php if (isset($_GET['sent']) && $_GET['sent'] == '1'): ?>
+            <div class="jpi-alert-success">✓ تم استلام طلب الحجز بنجاح. سنتواصل معك خلال 24 ساعة لتأكيد الموعد.</div>
+        <?php elseif (isset($_GET['error'])): ?>
+            <div class="jpi-alert-error">⚠ حدث خطأ — الرجاء التأكّد من البيانات والمحاولة مرّة أخرى.</div>
+        <?php endif; ?>
 
-        <div class="row justify-content-center">
-            <div class="col-sm-6 col-lg-4">
-                <div class="team-item">
-                    <img src="assets/img/home-one/asel.png" alt="Team">
-                    <div class="team-inner">
-                        <ul>
-                            <li>
-                                <a href="tel:00962796872442" target="_blank">
-                                    <i class="icofont-phone"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://x.com/AseelAbusara?t=lAiwGilBtfeGY8OpwvUGRg&s=09" target="_blank">
-                                    <i class="icofont-x"></i>
-                                </a>
-                            </li>
+        <div class="booking-card">
+            <h2>احجز موعداً مع محامٍ متخصّص</h2>
+            <p class="lead">املأ النموذج وسنتواصل معك خلال 24 ساعة لتأكيد موعدك</p>
 
-                            <li>
-                                <a href="mailto:Aseel@jpilawfirm.com" target="_blank">
-                                    <i class="icofont-email"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <h3>
-                            <a href="attorney-details">المحامية اسيل أبو سارة</a>
-                        </h3>
-                        <span>
-                            المحامية اسيل ابو سارة حاصلة على ماجستير في القانون العام شريك مؤسس في جي بي أي</span>
+            <form method="post" action="<?= $base_url ?>inc/send_appointment.php">
+                <div class="form-grid">
+                    <div>
+                        <label>الاسم الكامل <span class="req">*</span></label>
+                        <input type="text" name="name" required dir="rtl" placeholder="مثال: أحمد محمد">
+                    </div>
+                    <div>
+                        <label>البريد الإلكتروني <span class="req">*</span></label>
+                        <input type="email" name="email" required dir="ltr" placeholder="you@example.com">
+                    </div>
+                    <div>
+                        <label>رقم الهاتف <span class="req">*</span></label>
+                        <input type="tel" name="phone" required dir="ltr" placeholder="+962 79 000 0000">
+                    </div>
+                    <div>
+                        <label>نوع القضيّة</label>
+                        <select name="subject" dir="rtl" class="jpi-native">
+                            <option value="" disabled selected>— اختر نوع القضيّة —</option>
+                            <option value="استشارة عامّة">استشارة عامّة</option>
+                            <option value="قانون الشركات والتأسيس">قانون الشركات والتأسيس</option>
+                            <option value="القانون التجاري والعقود">القانون التجاري والعقود</option>
+                            <option value="القانون الجنائي">القانون الجنائي</option>
+                            <option value="قضايا الأحوال الشخصيّة">قضايا الأحوال الشخصيّة (طلاق، حضانة، نفقة)</option>
+                            <option value="قضايا الأراضي والعقارات">قضايا الأراضي والعقارات</option>
+                            <option value="قانون العمل">قانون العمل</option>
+                            <option value="الجرائم الإلكترونية">الجرائم الإلكترونية</option>
+                            <option value="قضايا ضريبيّة">قضايا ضريبيّة</option>
+                            <option value="أخرى">أخرى</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>التاريخ المفضّل</label>
+                        <input type="date" name="preferred_date" min="<?= date('Y-m-d') ?>">
+                    </div>
+                    <div>
+                        <label>الوقت المفضّل</label>
+                        <input type="time" name="preferred_time">
+                    </div>
+                    <div class="row-full">
+                        <label>تفاصيل إضافيّة (اختياري)</label>
+                        <textarea name="message" placeholder="اكتب ملخّصاً عن قضيّتك حتى نحضّر استشارتك..."></textarea>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm-6 col-lg-4">
-                <div class="team-item">
-                    <img src="assets/img/home-one/img1.png" alt="Team">
-                    <div class="team-inner">
-                        <ul>
-                            <li>
-                                <a href="tel:00970592900242" target="_blank">
-                                    <i class="icofont-phone"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://x.com/majdalahmad83?t=LG_lD7itc2D1CzBpFfJlSQ&s=09" target="_blank">
-                                    <i class="icofont-x"></i>
-                                </a>
-                            </li>
 
-                            <li>
-                                <a href="mailto:info@jpilawfirm.com" target="_blank">
-                                    <i class="icofont-email"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <h3>
-                            <a href="attorney-details">المحامي مجد الاحمد</a>
-                        </h3>
-                        <span>
-                            المحامي مجد الأحمد حاصل على ماجستير في القانون العام شريك مؤسس في جي بي أي</span>
-                    </div>
-                </div>
-            </div>
-
-
+                <button type="submit" class="submit-btn">
+                    <i class="fa-solid fa-calendar-check"></i> &nbsp; تأكيد الحجز
+                </button>
+            </form>
         </div>
     </div>
 </section>
-<!-- End Team -->
-
-<!-- Contact Form -->
-
-<!-- End Contact Form -->
+<!-- End Booking Form -->

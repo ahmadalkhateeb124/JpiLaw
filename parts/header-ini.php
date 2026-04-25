@@ -64,17 +64,19 @@ $pagesContent = [
 
 
 // التحقق من وجود الصفحة في المصفوفة
-if (array_key_exists($requestUrl, $pagesContent)) {
-    $page = $pagesContent[$requestUrl];
-    $PageTitle = $page['title'];
-    $metaDescription = mb_substr(strip_tags($page['description']), 0, 160);
-    $escapedDescription = htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8');
-    $KeyWords = htmlspecialchars($page['keywords'], ENT_QUOTES, 'UTF-8');
-} else {
-// الصفحة الافتراضية إذا لم يتم العثور على الصفحة
-    $PageTitle = "JPI | مكتب محاماة وخدمات قانونية متخصصة في الأردن وفلسطين | محامي شركات";
-    $escapedDescription = "مكتب JPI يقدم استشارات قانونية احترافية في القانون التجاري، الإصابات الشخصية، التحصيل، وأكثر. تواصل معنا للحصول على استشارة قانونية موثوقة.";
-    $KeyWords = "JPI، محاماة، خدمات قانونية، استشارات قانونية، قانون تجاري، إصابات شخصية، التحصيل، الأردن، فلسطين، محامي شركات، محامي متخصص في الشركات";
+// — لو السكربت اللي قبلنا (مثل index.php للـblog-details) ضبط $PageTitle، لا نعيد كتابته.
+if (!isset($PageTitle) || $PageTitle === '') {
+    if (array_key_exists($requestUrl, $pagesContent)) {
+        $page = $pagesContent[$requestUrl];
+        $PageTitle = $page['title'];
+        $metaDescription = mb_substr(strip_tags($page['description']), 0, 160);
+        $escapedDescription = htmlspecialchars($metaDescription, ENT_QUOTES, 'UTF-8');
+        $KeyWords = htmlspecialchars($page['keywords'], ENT_QUOTES, 'UTF-8');
+    } else {
+        $PageTitle = "JPI | مكتب محاماة وخدمات قانونية متخصصة في الأردن وفلسطين | محامي شركات";
+        $escapedDescription = "مكتب JPI يقدم استشارات قانونية احترافية في القانون التجاري، الإصابات الشخصية، التحصيل، وأكثر. تواصل معنا للحصول على استشارة قانونية موثوقة.";
+        $KeyWords = "JPI، محاماة، خدمات قانونية، استشارات قانونية، قانون تجاري، إصابات شخصية، التحصيل، الأردن، فلسطين، محامي شركات، محامي متخصص في الشركات";
+    }
 }
 
 

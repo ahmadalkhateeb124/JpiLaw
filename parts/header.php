@@ -1,5 +1,5 @@
 <?php
-require_once("header-ini.php");
+require_once 'header-ini.php';
 // الحصول على الصفحة الحالية من URL
 $current_page = basename($_SERVER['REQUEST_URI'], ".php");  // هذا يقوم بإزالة امتداد ".php" من اسم الصفحة
 
@@ -25,13 +25,31 @@ $current_page = basename($_SERVER['REQUEST_URI'], ".php");  // هذا يقوم �
 
     <!-- تحسين محركات البحث (SEO) -->
     <meta name="robots" content="index, follow">
+    <meta name="author" content="JPI Law Firm">
 
+    <?php
+        $_ogImage     = isset($ogImage) && $ogImage ? $ogImage : ($base_url . 'assets/favicon.ico');
+        $_canonicalRaw = $currentURL ?? $base_url;
+        // Strip query string for canonical (preserves cleanest URL form)
+        $_canonical    = strtok($_canonicalRaw, '?');
+        $_isArticle    = isset($post) && $post;
+    ?>
+    <link rel="canonical" href="<?= htmlspecialchars($_canonical, ENT_QUOTES, 'UTF-8') ?>">
 
+    <meta property="og:site_name" content="JPI Law Firm">
+    <meta property="og:locale" content="ar_JO">
     <meta property="og:title" content="<?php echo $PageTitle; ?>">
     <meta property="og:description" content="<?php echo $escapedDescription; ?>">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://jpilawfirm.com/assets/favicon.ico">
-    <meta property="og:url" content="https://jpilawfirm.com">
+    <meta property="og:type" content="<?= $_isArticle ? 'article' : 'website' ?>">
+    <meta property="og:image" content="<?= htmlspecialchars($_ogImage, ENT_QUOTES, 'UTF-8') ?>">
+    <meta property="og:url" content="<?= htmlspecialchars($_canonical, ENT_QUOTES, 'UTF-8') ?>">
+    <?php if ($_isArticle): ?>
+        <meta property="article:published_time" content="<?= htmlspecialchars($post['published_at'] ?: $post['created_at'], ENT_QUOTES, 'UTF-8') ?>">
+        <meta property="article:modified_time" content="<?= htmlspecialchars($post['updated_at'] ?? $post['created_at'], ENT_QUOTES, 'UTF-8') ?>">
+        <?php if (!empty($post['cat_name'])): ?>
+            <meta property="article:section" content="<?= htmlspecialchars($post['cat_name'], ENT_QUOTES, 'UTF-8') ?>">
+        <?php endif; ?>
+    <?php endif; ?>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="https://jpilawfirm.com/assets/favicon.ico">
@@ -43,7 +61,7 @@ $current_page = basename($_SERVER['REQUEST_URI'], ".php");  // هذا يقوم �
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?php echo $PageTitle; ?>">
     <meta name="twitter:description" content="<?php echo $escapedDescription; ?>">
-    <meta name="twitter:image" content="https://jpilawfirm.com/assets/favicon.ico">
+    <meta name="twitter:image" content="<?= htmlspecialchars($_ogImage, ENT_QUOTES, 'UTF-8') ?>">
 
 
 
@@ -78,6 +96,101 @@ $current_page = basename($_SERVER['REQUEST_URI'], ".php");  // هذا يقوم �
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+    <!-- ───────────────────── JSON-LD Structured Data ───────────────────── -->
+    <?php
+        // Organization / LocalBusiness — appears on every page
+        $_orgJsonLd = [
+            '@context' => 'https://schema.org',
+            '@type'    => 'LegalService',
+            'name'     => 'JPI Law Firm',
+            'alternateName' => 'مكتب JPI للمحاماة',
+            'url'      => $base_url,
+            'logo'     => $base_url . 'assets/img/logo.png',
+            'image'    => $base_url . 'assets/img/logo.png',
+            'description' => 'مكتب JPI للمحاماة يقدّم خدمات قانونية شاملة للأفراد والشركات في الأردن وفلسطين.',
+            'telephone' => '+962-79-628-6204',
+            'email'    => 'info@jpilawfirm.com',
+            'priceRange' => '$$',
+            'areaServed' => [
+                ['@type' => 'Country', 'name' => 'Jordan'],
+                ['@type' => 'Country', 'name' => 'Palestine'],
+            ],
+            'address' => [
+                [
+                    '@type' => 'PostalAddress',
+                    'streetAddress' => 'شارع المدينة المنورة، مجمع الخازندار رقم 198',
+                    'addressLocality' => 'عمّان',
+                    'addressCountry' => 'JO',
+                ],
+                [
+                    '@type' => 'PostalAddress',
+                    'streetAddress' => 'ميدان المنارة، شارع الإرسال',
+                    'addressLocality' => 'رام الله',
+                    'addressCountry' => 'PS',
+                ],
+            ],
+            'openingHoursSpecification' => [
+                '@type' => 'OpeningHoursSpecification',
+                'dayOfWeek' => ['Sunday','Monday','Tuesday','Wednesday','Thursday'],
+                'opens'  => '09:00',
+                'closes' => '17:00',
+            ],
+            'sameAs' => array_values(array_filter([
+                'https://www.facebook.com/jpilawfirm',
+                'https://x.com/jpilawfirm',
+                'https://www.linkedin.com/company/jpilawfirm',
+                'https://www.instagram.com/jpilawfirm',
+            ])),
+        ];
+    ?>
+    <script type="application/ld+json">
+    <?= json_encode($_orgJsonLd, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
+    </script>
+
+    <?php if ($_isArticle): ?>
+        <?php
+        $_articleLd = [
+            '@context' => 'https://schema.org',
+            '@type'    => 'Article',
+            'mainEntityOfPage' => ['@type' => 'WebPage', '@id' => $_canonical],
+            'headline'    => $post['title_ar'],
+            'description' => mb_substr(strip_tags($post['excerpt_ar'] ?? $post['title_ar']), 0, 160),
+            'image'       => $post['featured_image'] ?: $base_url . 'assets/img/logo.png',
+            'datePublished' => $post['published_at'] ?: $post['created_at'],
+            'dateModified'  => $post['updated_at']   ?? $post['created_at'],
+            'author' => [
+                '@type' => 'Person',
+                'name'  => $post['author_name'] ?? 'JPI Law Firm',
+            ],
+            'publisher' => [
+                '@type' => 'Organization',
+                'name'  => 'JPI Law Firm',
+                'logo'  => ['@type' => 'ImageObject', 'url' => $base_url . 'assets/img/logo.png'],
+            ],
+            'keywords' => $post['meta_keywords_ar'] ?? '',
+        ];
+        if (!empty($post['cat_name'])) {
+            $_articleLd['articleSection'] = $post['cat_name'];
+        }
+        ?>
+        <script type="application/ld+json">
+        <?= json_encode($_articleLd, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
+        </script>
+
+        <!-- Breadcrumb for article pages -->
+        <script type="application/ld+json">
+        <?= json_encode([
+            '@context' => 'https://schema.org',
+            '@type'    => 'BreadcrumbList',
+            'itemListElement' => [
+                ['@type' => 'ListItem', 'position' => 1, 'name' => 'الرئيسية', 'item' => $base_url],
+                ['@type' => 'ListItem', 'position' => 2, 'name' => 'المدونة',   'item' => $base_url . 'blog'],
+                ['@type' => 'ListItem', 'position' => 3, 'name' => $post['title_ar'], 'item' => $_canonical],
+            ],
+        ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
+        </script>
+    <?php endif; ?>
 
 </head>
 

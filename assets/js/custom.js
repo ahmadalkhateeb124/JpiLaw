@@ -82,8 +82,8 @@ jQuery(function ($) {
 		});
 	});
 
-	// Nice Select JS
-	$('select').niceSelect();
+	// Nice Select JS — apply to all selects EXCEPT those marked .jpi-native
+	$('select:not(.jpi-native)').niceSelect();
 
 	// Subscribe form
 	$(".newsletter-form").validator().on("submit", function (event) {
