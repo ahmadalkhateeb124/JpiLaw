@@ -28,7 +28,6 @@
 </FilesMatch>
 
 # Block direct access to internal folders
-RedirectMatch 403 ^/inc/(?!.*\.(jpg|jpeg|png|gif|webp|svg|css|js)$).*$
 RedirectMatch 403 ^/PHPMail/.*$
 RedirectMatch 403 ^/php/.*$
 
